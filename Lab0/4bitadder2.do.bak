@@ -1,6 +1,6 @@
 vlog -reportprogress 300 -work work 4bitadder2.v
 vsim -voptargs="+acc" testFullAdder
-add wave -position insertpoint \
+add wave -position insertpoint  \
 sim:/testFullAdder/carryout \
 sim:/testFullAdder/a \
 sim:/testFullAdder/b \

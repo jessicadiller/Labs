@@ -6,8 +6,7 @@
 
 module FullAdder1bit //1 bit full adder module
 (
-//initializing inputs and outputs
-output sum, 
+output sum, //initializing inputs and outputs
 output carryout, 
 output overflow,
 input a,
@@ -15,7 +14,7 @@ input b
 );
 
 assign carryin = 0; //set carryin to 0 so as to enable carryin when stacking modules but not needed for a single bit adder
-//the components of the adders
+//adding
 `XOR xor1(aXORb, a, b); 
 `AND and1(aANDb, a, b);
 `AND and2(aXORbANDcarryin, aXORb, carryin);
@@ -28,8 +27,7 @@ endmodule
 
 module FullAdder4bit //4 bit adder
 (
-//initializing inputs and outputs, sum, a and b are combined into busses
-output[3:0] sum,
+output[3:0] sum, //initializing inputs and outputs, sum, a and b are combined into busses
 output carryout, 
 output overflow,
 input[3:0] a,
@@ -46,7 +44,7 @@ assign carryin0 = 0; //assigning carryin for the least siginificant bit to 0
 `OR or0(carryin1, a0XORb0ANDcarryin0, a0ANDb0);
 `XOR xor02(sum[0], a0XORb0, carryin0);
 
-//adding second bit
+//adding second but
 `XOR xor11(a1XORb1, a[1], b[1]);
 `AND and11(a1ANDb1, a[1], b[1]);
 `AND and12(a1XORb1ANDcarryin1, a1XORb1, carryin1);
@@ -79,7 +77,6 @@ wire[3:0] sum;
 wire carryout, overflow;
 FullAdder4bit adder (sum[3:0], carryout, overflow, a[3:0], b[3:0]);
 
-//truth table test cases display
 initial begin
 $display("   A     B  |  Sum  Cout| Overflow | Expected Output (carryout) | Expected overflow");
 //All 0000
