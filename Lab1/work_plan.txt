@@ -1,0 +1,19 @@
+WORK PLAN
+Jessica Diller, Griffin Tschurwald, and Marie-Caroline Finke
+
+Make work plan - 1 hour
+Think about logic and plan design - 1 hour
+Decide test cases - 15 minutes
+Make test benches - 30 minutes
+Make an OR - 30 min
+Make an AND - 30 min
+Make a NOR - 30 min
+Make a NAND - 30 min
+Make an XOR - 1 hour
+Make an ADD - 1 hour
+Make a SUB - 1 hour
+Make a SLT -  1 hour
+design and test control logic LUT - 1 hour
+timing analysis - 1 hour
+write up lab - 1 hour
+work plan reflection - 15 min
