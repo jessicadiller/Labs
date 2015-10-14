@@ -1,8 +1,8 @@
 // define gates with delays
-`define AND and #10
-`define OR or #10
+`define AND and #20
+`define OR or #20
 `define NOT not #10
-`define XOR xor #10
+`define XOR xor #70
 
 module FullAdder1bit //1 bit full adder module
 (
@@ -312,11 +312,11 @@ FullAddSubtract32bit addsubtract (sum[31:0], carryout, overflow, a[31:0], b[31:0
 initial begin
 $display("   A     B   Control|  Sum  |  Cout   Overflow | Expected Output (carryout) | Expected overflow");
 //All 0000
-a=00000000000000000000000000000000; b=00000000000000000000000000000000; control=0; #1000 
+a=00000000000000000000000000000000; b=00000000000000000000000000000000; control=0; #2000 
 $display(" %b %b %b |  %b  | %b %b ", a, b, control, sum, carryout, overflow);
-a=32'b00001110000101110000111000010111; b=32'b00001110000101110000110000100011; control=1; #10000  //236391959-236391459=500
+a=32'b00001110000101110000111000010111; b=32'b00001110000101110000110000100011; control=1; #20000  //236391959-236391459=500
 $display(" %b %b %b |  %b  | %b %b | 0x16+0000000111110100 ", a, b, control, sum, carryout, overflow);
-a=32'b11111110000101110000111000010111; b=32'b11111110000101110000111000010111; control=0; #1000
+a=32'b11111110000101110000111000010111; b=32'b11111110000101110000111000010111; control=0; #2000
 $display(" %b %b %b |  %b  | %b %b | 11111100001011100001110000101110", a, b, control, sum, carryout, overflow);
 end
 
