@@ -4,7 +4,7 @@ TASK - TIME ESTIMATE - DATE - TIME ACTUAL - ACTUAL DATE
 Make work plan - 1 hour - October 6 - 45 min - October 6
 Think about logic and plan design - 2 hour - October 9 - 45 min - October 8
 Decide test cases - 15 minutes - October 10 - 15 min - October 9
-Make test benches - 30 minutes - October 10 - ? - October 9
+Make test benches - 30 minutes - October 10 - ? - October 14
 Make an OR - 30 min - October 11
 Make an AND - 30 min - October 11
 Make a NOR - 30 min - October 11
