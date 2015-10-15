@@ -1,5 +1,5 @@
 // define gates with delays
-`define XOR xor #70
+`define XOR xor #50
 
 module xor32bit //4 bit xor
 (
