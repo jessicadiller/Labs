@@ -60,38 +60,38 @@ SLT32bit struct_slt(slt_output, operandA, operandB);
 //each mux will calculate one bit of the result output
 //alllllll of the muxes to simulate a 32 bit bus mux
 
-structMux mux0(result[0], muxindex[0], muxindex[1],muxindex[2], add_sub_output[0],  xor_output[0], slt_output[0],and_output[0], nand_output[0], not_output[0], or_output[0]);
-structMux mux1(result[1], muxindex[0], muxindex[1],muxindex[2], add_sub_output[1],  xor_output[1], slt_output[1],and_output[1], nand_output[1], not_output[1], or_output[1]);
-structMux mux2(result[2], muxindex[0], muxindex[1],muxindex[2], add_sub_output[2],  xor_output[2], slt_output[2],and_output[2], nand_output[2], not_output[2], or_output[2]);
-structMux mux3(result[3], muxindex[0], muxindex[1],muxindex[2], add_sub_output[3],  xor_output[3], slt_output[3],and_output[3], nand_output[3], not_output[3], or_output[3]);
-structMux mux4(result[4], muxindex[0], muxindex[1],muxindex[2], add_sub_output[4],  xor_output[4], slt_output[4],and_output[4], nand_output[4], not_output[4], or_output[4]);
-structMux mux5(result[5], muxindex[0], muxindex[1],muxindex[2], add_sub_output[5],  xor_output[5], slt_output[5],and_output[5], nand_output[5], not_output[5], or_output[5]);
-structMux mux6(result[6], muxindex[0], muxindex[1],muxindex[2], add_sub_output[6],  xor_output[6], slt_output[6],and_output[6], nand_output[6], not_output[6], or_output[6]);
-structMux mux7(result[7], muxindex[0], muxindex[1],muxindex[2], add_sub_output[7],  xor_output[7], slt_output[7],and_output[7], nand_output[7], not_output[7], or_output[7]);
-structMux mux8(result[8], muxindex[0], muxindex[1],muxindex[2], add_sub_output[8],  xor_output[8], slt_output[8],and_output[8], nand_output[8], not_output[8], or_output[8]);
-structMux mux9(result[9], muxindex[0], muxindex[1],muxindex[2], add_sub_output[9],  xor_output[9], slt_output[9],and_output[9], nand_output[9], not_output[9], or_output[9]);
-structMux mux10(result[10], muxindex[0], muxindex[1],muxindex[2], add_sub_output[10],  xor_output[10], slt_output[10],and_output[10], nand_output[10], not_output[10], or_output[10]);
-structMux mux11(result[11], muxindex[0], muxindex[1],muxindex[2], add_sub_output[11],  xor_output[11], slt_output[11],and_output[11], nand_output[11], not_output[11], or_output[11]);
-structMux mux12(result[12], muxindex[0], muxindex[1],muxindex[2], add_sub_output[12],  xor_output[12], slt_output[12],and_output[12], nand_output[12], not_output[12], or_output[12]);
-structMux mux13(result[13], muxindex[0], muxindex[1],muxindex[2], add_sub_output[13],  xor_output[13], slt_output[13],and_output[13], nand_output[13], not_output[13], or_output[13]);
-structMux mux14(result[14], muxindex[0], muxindex[1],muxindex[2], add_sub_output[14],  xor_output[14], slt_output[14],and_output[14], nand_output[14], not_output[14], or_output[14]);
-structMux mux15(result[15], muxindex[0], muxindex[1],muxindex[2], add_sub_output[15],  xor_output[15], slt_output[15],and_output[15], nand_output[15], not_output[15], or_output[15]);
-structMux mux16(result[16], muxindex[0], muxindex[1],muxindex[2], add_sub_output[16],  xor_output[16], slt_output[16],and_output[16], nand_output[16], not_output[16], or_output[16]);
-structMux mux17(result[17], muxindex[0], muxindex[1],muxindex[2], add_sub_output[17],  xor_output[17], slt_output[17],and_output[17], nand_output[17], not_output[17], or_output[17]);
-structMux mux18(result[18], muxindex[0], muxindex[1],muxindex[2], add_sub_output[18],  xor_output[18], slt_output[18],and_output[18], nand_output[18], not_output[18], or_output[18]);
-structMux mux19(result[19], muxindex[0], muxindex[1],muxindex[2], add_sub_output[19],  xor_output[19], slt_output[19],and_output[19], nand_output[19], not_output[19], or_output[19]);
-structMux mux20(result[20], muxindex[0], muxindex[1],muxindex[2], add_sub_output[20],  xor_output[20], slt_output[20],and_output[20], nand_output[20], not_output[20], or_output[20]);
-structMux mux21(result[21], muxindex[0], muxindex[1],muxindex[2], add_sub_output[21],  xor_output[21], slt_output[21],and_output[21], nand_output[21], not_output[21], or_output[21]);
-structMux mux22(result[22], muxindex[0], muxindex[1],muxindex[2], add_sub_output[22],  xor_output[22], slt_output[22],and_output[22], nand_output[22], not_output[22], or_output[22]);
-structMux mux23(result[23], muxindex[0], muxindex[1],muxindex[2], add_sub_output[23],  xor_output[23], slt_output[23],and_output[23], nand_output[23], not_output[23], or_output[23]);
-structMux mux24(result[24], muxindex[0], muxindex[1],muxindex[2], add_sub_output[24],  xor_output[24], slt_output[24],and_output[24], nand_output[24], not_output[24], or_output[24]);
-structMux mux25(result[25], muxindex[0], muxindex[1],muxindex[2], add_sub_output[25],  xor_output[25], slt_output[25],and_output[25], nand_output[25], not_output[25], or_output[25]);
-structMux mux26(result[26], muxindex[0], muxindex[1],muxindex[2], add_sub_output[26],  xor_output[26], slt_output[26],and_output[26], nand_output[26], not_output[26], or_output[26]);
-structMux mux27(result[27], muxindex[0], muxindex[1],muxindex[2], add_sub_output[27],  xor_output[27], slt_output[27],and_output[27], nand_output[27], not_output[27], or_output[27]);
-structMux mux28(result[28], muxindex[0], muxindex[1],muxindex[2], add_sub_output[28],  xor_output[28], slt_output[28],and_output[28], nand_output[28], not_output[28], or_output[28]);
-structMux mux29(result[29], muxindex[0], muxindex[1],muxindex[2], add_sub_output[29],  xor_output[29], slt_output[29],and_output[29], nand_output[29], not_output[29], or_output[29]);
-structMux mux30(result[30], muxindex[0], muxindex[1],muxindex[2], add_sub_output[30],  xor_output[30], slt_output[30],and_output[30], nand_output[30], not_output[30], or_output[30]);
-structMux mux31(result[31], muxindex[0], muxindex[1],muxindex[2], add_sub_output[31],  xor_output[31], slt_output[31],and_output[31], nand_output[31], not_output[31], or_output[31]);
+structMux mux0(result[0], muxindex[0], muxindex[1],muxindex[2], add_sub_output[0],  xor_output[0], slt_output[0],and_output[0], nand_output[0], nor_output[0], or_output[0]);
+structMux mux1(result[1], muxindex[0], muxindex[1],muxindex[2], add_sub_output[1],  xor_output[1], slt_output[1],and_output[1], nand_output[1], nor_output[1], or_output[1]);
+structMux mux2(result[2], muxindex[0], muxindex[1],muxindex[2], add_sub_output[2],  xor_output[2], slt_output[2],and_output[2], nand_output[2], nor_output[2], or_output[2]);
+structMux mux3(result[3], muxindex[0], muxindex[1],muxindex[2], add_sub_output[3],  xor_output[3], slt_output[3],and_output[3], nand_output[3], nor_output[3], or_output[3]);
+structMux mux4(result[4], muxindex[0], muxindex[1],muxindex[2], add_sub_output[4],  xor_output[4], slt_output[4],and_output[4], nand_output[4], nor_output[4], or_output[4]);
+structMux mux5(result[5], muxindex[0], muxindex[1],muxindex[2], add_sub_output[5],  xor_output[5], slt_output[5],and_output[5], nand_output[5], nor_output[5], or_output[5]);
+structMux mux6(result[6], muxindex[0], muxindex[1],muxindex[2], add_sub_output[6],  xor_output[6], slt_output[6],and_output[6], nand_output[6], nor_output[6], or_output[6]);
+structMux mux7(result[7], muxindex[0], muxindex[1],muxindex[2], add_sub_output[7],  xor_output[7], slt_output[7],and_output[7], nand_output[7], nor_output[7], or_output[7]);
+structMux mux8(result[8], muxindex[0], muxindex[1],muxindex[2], add_sub_output[8],  xor_output[8], slt_output[8],and_output[8], nand_output[8], nor_output[8], or_output[8]);
+structMux mux9(result[9], muxindex[0], muxindex[1],muxindex[2], add_sub_output[9],  xor_output[9], slt_output[9],and_output[9], nand_output[9], nor_output[9], or_output[9]);
+structMux mux10(result[10], muxindex[0], muxindex[1],muxindex[2], add_sub_output[10],  xor_output[10], slt_output[10],and_output[10], nand_output[10], nor_output[10], or_output[10]);
+structMux mux11(result[11], muxindex[0], muxindex[1],muxindex[2], add_sub_output[11],  xor_output[11], slt_output[11],and_output[11], nand_output[11], nor_output[11], or_output[11]);
+structMux mux12(result[12], muxindex[0], muxindex[1],muxindex[2], add_sub_output[12],  xor_output[12], slt_output[12],and_output[12], nand_output[12], nor_output[12], or_output[12]);
+structMux mux13(result[13], muxindex[0], muxindex[1],muxindex[2], add_sub_output[13],  xor_output[13], slt_output[13],and_output[13], nand_output[13], nor_output[13], or_output[13]);
+structMux mux14(result[14], muxindex[0], muxindex[1],muxindex[2], add_sub_output[14],  xor_output[14], slt_output[14],and_output[14], nand_output[14], nor_output[14], or_output[14]);
+structMux mux15(result[15], muxindex[0], muxindex[1],muxindex[2], add_sub_output[15],  xor_output[15], slt_output[15],and_output[15], nand_output[15], nor_output[15], or_output[15]);
+structMux mux16(result[16], muxindex[0], muxindex[1],muxindex[2], add_sub_output[16],  xor_output[16], slt_output[16],and_output[16], nand_output[16], nor_output[16], or_output[16]);
+structMux mux17(result[17], muxindex[0], muxindex[1],muxindex[2], add_sub_output[17],  xor_output[17], slt_output[17],and_output[17], nand_output[17], nor_output[17], or_output[17]);
+structMux mux18(result[18], muxindex[0], muxindex[1],muxindex[2], add_sub_output[18],  xor_output[18], slt_output[18],and_output[18], nand_output[18], nor_output[18], or_output[18]);
+structMux mux19(result[19], muxindex[0], muxindex[1],muxindex[2], add_sub_output[19],  xor_output[19], slt_output[19],and_output[19], nand_output[19], nor_output[19], or_output[19]);
+structMux mux20(result[20], muxindex[0], muxindex[1],muxindex[2], add_sub_output[20],  xor_output[20], slt_output[20],and_output[20], nand_output[20], nor_output[20], or_output[20]);
+structMux mux21(result[21], muxindex[0], muxindex[1],muxindex[2], add_sub_output[21],  xor_output[21], slt_output[21],and_output[21], nand_output[21], nor_output[21], or_output[21]);
+structMux mux22(result[22], muxindex[0], muxindex[1],muxindex[2], add_sub_output[22],  xor_output[22], slt_output[22],and_output[22], nand_output[22], nor_output[22], or_output[22]);
+structMux mux23(result[23], muxindex[0], muxindex[1],muxindex[2], add_sub_output[23],  xor_output[23], slt_output[23],and_output[23], nand_output[23], nor_output[23], or_output[23]);
+structMux mux24(result[24], muxindex[0], muxindex[1],muxindex[2], add_sub_output[24],  xor_output[24], slt_output[24],and_output[24], nand_output[24], nor_output[24], or_output[24]);
+structMux mux25(result[25], muxindex[0], muxindex[1],muxindex[2], add_sub_output[25],  xor_output[25], slt_output[25],and_output[25], nand_output[25], nor_output[25], or_output[25]);
+structMux mux26(result[26], muxindex[0], muxindex[1],muxindex[2], add_sub_output[26],  xor_output[26], slt_output[26],and_output[26], nand_output[26], nor_output[26], or_output[26]);
+structMux mux27(result[27], muxindex[0], muxindex[1],muxindex[2], add_sub_output[27],  xor_output[27], slt_output[27],and_output[27], nand_output[27], nor_output[27], or_output[27]);
+structMux mux28(result[28], muxindex[0], muxindex[1],muxindex[2], add_sub_output[28],  xor_output[28], slt_output[28],and_output[28], nand_output[28], nor_output[28], or_output[28]);
+structMux mux29(result[29], muxindex[0], muxindex[1],muxindex[2], add_sub_output[29],  xor_output[29], slt_output[29],and_output[29], nand_output[29], nor_output[29], or_output[29]);
+structMux mux30(result[30], muxindex[0], muxindex[1],muxindex[2], add_sub_output[30],  xor_output[30], slt_output[30],and_output[30], nand_output[30], nor_output[30], or_output[30]);
+structMux mux31(result[31], muxindex[0], muxindex[1],muxindex[2], add_sub_output[31],  xor_output[31], slt_output[31],and_output[31], nand_output[31], nor_output[31], or_output[31]);
 endmodule
 
 
@@ -118,21 +118,19 @@ input[2:0]  		ALUcommand
 endmodule
 
 //mulitplexer to choose between 7 inputs using a 3 bit control signal
-module structMux(out, address0,address1, address2, in0,in1,in2,in3,in4,in5,in6,in7);
+module structMux(out, address0,address1, address2, in0,in1,in2,in3,in4,in5,in6); //,in7);
 //initialize inputs and outputs
 output out;
 input address0, address1, address2;
-input in0, in1, in2, in3, in4, in5, in6, in7;
+input in0, in1, in2, in3, in4, in5, in6;// in7;
 //initialize inside wires
 wire na0, na1, na2;
-wire and0wire, and1wire, and2wire, and3wire, and4wire, and5wire, and6wire, and7wire;
-
 //inverters for the select inputs
 not na0inv(na0, address0);
 not na1inv(na1, address1);
 not na2inv(na2, address2);
 //ands for the actual outputs, these will have 3 inputs apiece
-wire and0wire, and1wire, and2wire, and3wire, and4wire, and5wire, and6wire, and7wire;
+wire and0wire, and1wire, and2wire, and3wire, and4wire, and5wire, and6wire); //and7wire);
 and in0and(and0wire, na0, na1, na2, in0);
 and in1and(and1wire, address0, na1, na2, in1);
 and in2and(and2wire, na0, address1, na2, in2);
@@ -140,10 +138,10 @@ and in3and(and3wire, address0, address1, na2, in3);
 and in4and(and4wire, na0, na1, address2, in4);
 and in5and(and5wire, address0, na1, address2, in5);
 and in6and(and6wire, na0, address1, address2, in6);
-and in7and(and7wire, address0, address1, address2, in7);
+//and in7and(and7wire, address0, address1, address2, in7);
 
 //final or gate with 4 inputs
-or finalor(out, and0wire, and1wire, and2wire, and3wire, and4wire, and5wire, and6wire, and7wire);
+or finalor(out, and0wire, and1wire, and2wire, and3wire, and4wire, and5wire, and6wire); //, and7wire);
 
 endmodule
 

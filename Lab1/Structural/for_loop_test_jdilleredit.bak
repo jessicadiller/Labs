@@ -977,14 +977,14 @@ reg[2:0]      	command;
 wire[2:0]  	muxindex;
 wire 		invertB;
 
-//reg[7:0] a0, b0;
+reg[7:0] a0, b0;
 
-//wire[7:0] sum0;
-//wire carryout0;
-//reg[7:0] a1, b1;
+wire[7:0] sum0;
+wire carryout0;
+reg[7:0] a1, b1;
  
-//wire[7:0] sum1;
-//wire carryout1;
+wire[7:0] sum1;
+wire carryout1;
 
 ALU behavioralalu(result, carryout, zero, overflow, operandA, operandB, command, muxindex, invertB);
 
