@@ -26,7 +26,7 @@ assign carryin = 0; //set carryin to 0 so as to enable carryin when stacking mod
 
 endmodule
 
-module FullAdder4bit //4 bit adder
+module FullAdder32bit //4 bit adder
 (
 //initializing inputs and outputs, sum, a and b are combined into busses
 output[31:0] sum,
@@ -269,11 +269,11 @@ assign carryin0 = 0; //assigning carryin for the least siginificant bit to 0
 endmodule
 
 module testFullAdder; //module to test the 4bit adder
-reg[3:0] a; 
-reg[3:0] b;
-wire[3:0] sum; 
+reg[31:0] a; 
+reg[31:0] b;
+wire[31:0] sum; 
 wire carryout, overflow;
-FullAdder4bit adder (sum[3:0], carryout, overflow, a[3:0], b[3:0]);
+FullAdder4bit adder (sum[31:0], carryout, overflow, a[31:0], b[31:0]);
 
 //truth table test cases display
 initial begin

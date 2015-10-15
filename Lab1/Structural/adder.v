@@ -4,28 +4,6 @@
 `define NOT not #50
 `define XOR xor #50
 
-module FullAdder1bit //1 bit full adder module
-(
-//initializing inputs and outputs
-output sum, 
-output carryout, 
-output overflow,
-input a,
-input b
-);
-
-assign carryin = 0; //set carryin to 0 so as to enable carryin when stacking modules but not needed for a single bit adder
-//the components of the adders
-`XOR xor1(aXORb, a, b); 
-`AND and1(aANDb, a, b);
-`AND and2(aXORbANDcarryin, aXORb, carryin);
-`OR or1(carryout, aXORbANDcarryin, aANDb);
-`XOR xor2(sum, aXORb, carryin);
-//determining whether overflow occurs
-`XOR xoroverflow(overflow, carryin, carryout);
-
-endmodule
-
 module FullAdder32bit //4 bit adder
 (
 //initializing inputs and outputs, sum, a and b are combined into busses
@@ -36,10 +14,11 @@ input[31:0] a,
 input[31:0] b
 );
 
-assign carryin0 = 0; //assigning carryin for the least siginificant bit to 0
+assign carryin0 = 1; //assigning carryin for the least siginificant bit to 0
 //general format for gates: [gatename][bit#][gate# of that type]
 
 //adding first bit (bit 0)
+`NOT 
 `XOR xor0a(a0XORb0, a[0], b[0]);
 `AND and0a(a0ANDb0, a[0], b[0]);
 `AND and0b(a0XORb0ANDcarryin0, a0XORb0, carryin0);

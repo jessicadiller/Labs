@@ -1,0 +1,8 @@
+vlog -reportprogress 600 -work work slt.v
+vsim -voptargs="+acc" testSLT32bit
+add wave -position insertpoint  \
+sim:/testFullAddsubtract/out \
+sim:/testFullAddsubtract/a \
+sim:/testFullAddsubtract/b 
+run -all
+wave zoom full

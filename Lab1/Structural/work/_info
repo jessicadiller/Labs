@@ -52,6 +52,28 @@ R9
 !i113 1
 R10
 n@full@add@subtract32bit
+vSLT32bit
+Z11 !s110 1444881691
+!i10b 1
+!s100 zZ5Z?AI@VTS6W3GRUCKc>1
+IKF[D2c4FhXbzJ[]N42^SP0
+R2
+R0
+Z12 w1444881688
+Z13 8slt.v
+Z14 Fslt.v
+L0 8
+R6
+r1
+!s85 0
+31
+Z15 !s108 1444881691.000000
+Z16 !s107 slt.v|
+Z17 !s90 -reportprogress|600|-work|work|slt.v|
+!s101 -O0
+!i113 1
+R10
+n@s@l@t32bit
 vtestFullAddsubtract
 R1
 !i10b 1
@@ -74,3 +96,69 @@ R9
 !i113 1
 R10
 ntest@full@addsubtract
+vtestSLT32bit
+R11
+!i10b 1
+!s100 RX4oLzMldM_Z;XZ@lP8m<0
+IETKi6P8oAUog^M9P?Ik6[2
+R2
+R0
+R12
+R13
+R14
+L0 259
+R6
+r1
+!s85 0
+31
+R15
+R16
+R17
+!s101 -O0
+!i113 1
+R10
+ntest@s@l@t32bit
+vtestZerosFlag
+Z18 !s110 1444890231
+!i10b 1
+!s100 7oFg99=M[mU[6S^LVFlh^2
+I2=XM@NgJ:A<2kahW]O_]32
+R2
+R0
+Z19 w1444890228
+Z20 8ZerosFlag.v
+Z21 FZerosFlag.v
+L0 18
+R6
+r1
+!s85 0
+31
+Z22 !s108 1444890231.000000
+Z23 !s107 ZerosFlag.v|
+Z24 !s90 -reportprogress|600|-work|work|ZerosFlag.v|
+!s101 -O0
+!i113 1
+R10
+ntest@zeros@flag
+vZerosFlag32bit
+R18
+!i10b 1
+!s100 1zjW2meI]?cQWjfNY6H141
+Izdl7@bj4UH`<:6]SUj;?Y0
+R2
+R0
+R19
+R20
+R21
+L0 8
+R6
+r1
+!s85 0
+31
+R22
+R23
+R24
+!s101 -O0
+!i113 1
+R10
+n@zeros@flag32bit

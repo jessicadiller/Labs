@@ -67,13 +67,13 @@ assign carryin0 = 0; //assigning carryin for the least siginificant bit to 0
 `OR or3(carryout, a3XORb3ANDcarryin3, a3ANDb3);
 `XOR xor32(sum[3], a3XORb3, carryin3);*/
 wire c[2:0];
-FullAdder1bit adder1(sum[0],c[0],a[0],b[0],0);
+FullAdder1Bit adder1(sum[0],c[0],a[0],b[0],0);
 
-FullAdder1bit adder2(sum[1],c[1],a[1],b[1],c[0]);
+FullAdder1Bit adder2(sum[1],c[1],a[1],b[1],c[0]);
 
-FullAdder1bit adder3(sum[2],c[2],a[2],b[2],c[1]);
+FullAdder1Bit adder3(sum[2],c[2],a[2],b[2],c[1]);
 
-FullAdder1bit adder4(sum[3],carryout,a[3],b[3],c[2]);
+FullAdder1Bit adder4(sum[3],carryout,a[3],b[3],c[2]);
 
 
 //calculating whether overflow occured by looking at the carryin and carryout for the most significant bit. Returns 1 if overflow occured
