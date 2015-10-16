@@ -1,0 +1,374 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Labs/Lab0
+vALU
+Z1 !s110 1444968622
+!i10b 1
+!s100 Wlb8]RJCG8ZUc`L4Oh[4L0
+IllIiWa?OH:?@VmHk7NPH_1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Labs/Lab1/Structural
+Z4 w1444968525
+Z5 8Final_MarieCaroline.v
+Z6 FFinal_MarieCaroline.v
+L0 18
+Z7 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z8 !s108 1444968622.000000
+Z9 !s107 Final_MarieCaroline.v|
+Z10 !s90 -reportprogress|300|-work|work|Final_MarieCaroline.v|
+!s101 -O0
+!i113 1
+Z11 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@a@l@u
+vALUcontrolLUT
+R1
+!i10b 1
+!s100 ]j?N@oQjAIT]Gbk[FG^B43
+IIO@?S3E_P3PN>MDLdX?Ji0
+R2
+R3
+R4
+R5
+R6
+L0 95
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+n@a@l@ucontrol@l@u@t
+vand32bit
+R1
+!i10b 1
+!s100 K;gJgz>EO<4nb5Gzgf7Di3
+IbfDM@f@?K8OV0kZgdK;dh2
+R2
+R3
+R4
+R5
+R6
+L0 144
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+vbehavioralFullAdder
+!s110 1444530602
+!i10b 1
+!s100 FUlB0AXTjD;f5`kh[VIJD3
+I9W>7YeginkFzzIifI6z403
+R2
+dC:/Users/gtschurwald/Documents/GitHub/Labs/Lab1/griffin_testing
+w1444530600
+8for_loop_test.v
+Ffor_loop_test.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1444530602.000000
+!s107 for_loop_test.v|
+!s90 -reportprogress|300|-work|work|for_loop_test.v|
+!s101 -O0
+!i113 1
+R11
+nbehavioral@full@adder
+vFullAdder1bit
+!i10b 1
+R2
+r1
+!s85 0
+31
+!s100 _l>lQQaSGeLXiY;cM8g2f1
+IJ^0XN2ZZN1>M?j]>I_4nJ0
+R0
+Z12 w1443752240
+Z13 84bitadder2.v
+Z14 F4bitadder2.v
+L0 7
+R7
+Z15 !s108 1443795163.000000
+Z16 !s107 4bitadder2.v|
+Z17 !s90 -reportprogress|300|-work|work|4bitadder2.v|
+!s101 -O0
+!i113 1
+R11
+n@full@adder1bit
+vFullAdder4bit
+!i10b 1
+R2
+r1
+!s85 0
+31
+!s100 GOh:6ne8bgRBjXo9K>jmX1
+IhjBKRG4Z8LnEg=0AeFPXV1
+R0
+R12
+R13
+R14
+L0 29
+R7
+R15
+R16
+R17
+!s101 -O0
+!i113 1
+R11
+n@full@adder4bit
+vFullAddSubtract32bit
+R1
+!i10b 1
+!s100 aSfU2^Odi6:7W6acWglGE0
+IGUBLBR7jmQ8@=0]fTi2Qa1
+R2
+R3
+R4
+R5
+R6
+L0 357
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+n@full@add@subtract32bit
+vnand32bit
+R1
+!i10b 1
+!s100 I02:m:UClNg6mSUncoI1a0
+I_I1n]B_4>6kTL>fPLH5I@1
+R2
+R3
+R4
+R5
+R6
+L0 228
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+vnor32bit
+R1
+!i10b 1
+!s100 o2k:`1m:F`iCILXfdMh>L1
+IM[3mR]]YDG`I67Xhb4C[I0
+R2
+R3
+R4
+R5
+R6
+L0 271
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+vor32bit
+R1
+!i10b 1
+!s100 `7nF5XEYKea_n<?NiFWjk2
+ICJJ8@6Q4[fdUGS9GOKj4H3
+R2
+R3
+R4
+R5
+R6
+L0 186
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+vSLT32bit
+R1
+!i10b 1
+!s100 3Y?lfBPN4R8a8E6BkXo@I2
+I]?Z^E2`F16Aefd]PD33jF0
+R2
+R3
+R4
+R5
+R6
+L0 636
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+n@s@l@t32bit
+vstructMux
+R1
+!i10b 1
+!s100 HB?<C3cn9RJojQ0VFh?mL3
+I_2TOo`R8XEVUgal6UQPQU0
+R2
+R3
+R4
+R5
+R6
+L0 118
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+nstruct@mux
+vstructural4bitFullAdder
+!i10b 1
+R2
+r1
+!s85 0
+31
+!s100 PfCF1_<?d50UVGNbUJYT?2
+INm=SjNl_2Ag>Q2VSlRdn[2
+R0
+w1443662692
+R13
+R14
+L0 7
+R7
+!s108 1443662735.000000
+R16
+R17
+!s101 -O0
+!i113 1
+R11
+nstructural4bit@full@adder
+vtest_looping
+R1
+!i10b 1
+!s100 VM`GZZQ04?So<[N:XleHJ3
+IBkF`9OjV3[QW;Uo8=KBOm2
+R2
+R3
+R4
+R5
+R6
+L0 896
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+vtestFullAdder
+!i10b 1
+R2
+r1
+!s85 0
+31
+!s100 1fKaH?<zk7IIF>YY@OSje1
+I2WkUbWz;^SU4[8e1YoMaU3
+R0
+R12
+R13
+R14
+L0 75
+R7
+R15
+R16
+R17
+!s101 -O0
+!i113 1
+R11
+ntest@full@adder
+vxor32bit
+R1
+!i10b 1
+!s100 oP@HaA5NnzfW@j8=mR6>z3
+ITB8mb6AhNjn6WoLkEh<nj3
+R2
+R3
+R4
+R5
+R6
+L0 315
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+vZeroFlag32bit
+R1
+!i10b 1
+!s100 1SCTQKlP4bHn^?G99QA@=0
+I:<;;SD8YAoOJPVOJ7dSNE3
+R2
+R3
+R4
+R5
+R6
+L0 886
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+n@zero@flag32bit
