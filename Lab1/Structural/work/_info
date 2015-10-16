@@ -8,157 +8,223 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Labs/Lab1/Structural
+vbehavioralMultiplexer
+!s110 1444895839
+!i10b 1
+!s100 mfV:;PZWNlInCN[kh2[Oa1
+I[Bo6NMlSKET[6gV4XC@Uh1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1444895623
+Z2 8multiplexertesting.v
+Z3 Fmultiplexertesting.v
+L0 7
+Z4 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1444895838.000000
+!s107 multiplexertesting.v|
+Z5 !s90 -reportprogress|300|-work|work|multiplexertesting.v|
+!s101 -O0
+!i113 1
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+nbehavioral@multiplexer
 vFullAdder1bit
-Z1 !s110 1444845330
+Z7 !s110 1444845330
 !i10b 1
 !s100 6``c5a3FXZ<8GZKRmZhR=0
 Id?>2SQ>TJ3;<bJO?[@zhz0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+R1
 R0
-Z3 w1444845325
-Z4 8addersubtractor.v
-Z5 Faddersubtractor.v
+Z8 w1444845325
+Z9 8addersubtractor.v
+Z10 Faddersubtractor.v
 L0 7
-Z6 OP;L;10.4a;61
+R4
 r1
 !s85 0
 31
-Z7 !s108 1444845330.000000
-Z8 !s107 addersubtractor.v|
-Z9 !s90 -reportprogress|600|-work|work|addersubtractor.v|
+Z11 !s108 1444845330.000000
+Z12 !s107 addersubtractor.v|
+Z13 !s90 -reportprogress|600|-work|work|addersubtractor.v|
 !s101 -O0
 !i113 1
-Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+R6
 n@full@adder1bit
 vFullAddSubtract32bit
-R1
+R7
 !i10b 1
 !s100 zkM>M]oODg?j0`>UeTG8E1
 I[W0kmb46@90@DfaWn=lJ93
-R2
+R1
 R0
-R3
-R4
-R5
+R8
+R9
+R10
 L0 29
-R6
+R4
 r1
 !s85 0
 31
-R7
-R8
-R9
+R11
+R12
+R13
 !s101 -O0
 !i113 1
-R10
+R6
 n@full@add@subtract32bit
 vSLT32bit
-Z11 !s110 1444881691
+Z14 !s110 1444881691
 !i10b 1
 !s100 zZ5Z?AI@VTS6W3GRUCKc>1
 IKF[D2c4FhXbzJ[]N42^SP0
-R2
+R1
 R0
-Z12 w1444881688
-Z13 8slt.v
-Z14 Fslt.v
+Z15 w1444881688
+Z16 8slt.v
+Z17 Fslt.v
 L0 8
-R6
+R4
 r1
 !s85 0
 31
-Z15 !s108 1444881691.000000
-Z16 !s107 slt.v|
-Z17 !s90 -reportprogress|600|-work|work|slt.v|
+Z18 !s108 1444881691.000000
+Z19 !s107 slt.v|
+Z20 !s90 -reportprogress|600|-work|work|slt.v|
 !s101 -O0
 !i113 1
-R10
+R6
 n@s@l@t32bit
-vtestFullAddsubtract
+vstructMux
+Z21 !s110 1444896181
+!i10b 1
+!s100 C_n`6Y_4idQfoHNL7UKFS0
+IA:<GoFXm5lC2^e<kDm3GI3
 R1
+R0
+Z22 w1444896157
+R2
+R3
+L0 23
+R4
+r1
+!s85 0
+31
+Z23 !s108 1444896181.000000
+Z24 !s107 multiplexertesting.v|
+R5
+!s101 -O0
+!i113 1
+R6
+nstruct@mux
+vtestFullAddsubtract
+R7
 !i10b 1
 !s100 ogO??VCf`=9>>28dMYN@c2
 ImoRfk[GL_ZXC?>oVeXbA:1
-R2
+R1
 R0
-R3
-R4
-R5
+R8
+R9
+R10
 L0 303
-R6
+R4
 r1
 !s85 0
 31
-R7
-R8
-R9
+R11
+R12
+R13
 !s101 -O0
 !i113 1
-R10
+R6
 ntest@full@addsubtract
+vtestMultiplexer
+R21
+!i10b 1
+!s100 iZGckDO55B8K>7JcFdJAg3
+Ig1gmhzlP9`CJJ`I`SY2be2
+R1
+R0
+R22
+R2
+R3
+L0 48
+R4
+r1
+!s85 0
+31
+R23
+R24
+R5
+!s101 -O0
+!i113 1
+R6
+ntest@multiplexer
 vtestSLT32bit
-R11
+R14
 !i10b 1
 !s100 RX4oLzMldM_Z;XZ@lP8m<0
 IETKi6P8oAUog^M9P?Ik6[2
-R2
+R1
 R0
-R12
-R13
-R14
-L0 259
-R6
-r1
-!s85 0
-31
 R15
 R16
 R17
+L0 259
+R4
+r1
+!s85 0
+31
+R18
+R19
+R20
 !s101 -O0
 !i113 1
-R10
+R6
 ntest@s@l@t32bit
 vtestZerosFlag
-Z18 !s110 1444890231
+Z25 !s110 1444890231
 !i10b 1
 !s100 7oFg99=M[mU[6S^LVFlh^2
 I2=XM@NgJ:A<2kahW]O_]32
-R2
+R1
 R0
-Z19 w1444890228
-Z20 8ZerosFlag.v
-Z21 FZerosFlag.v
+Z26 w1444890228
+Z27 8ZerosFlag.v
+Z28 FZerosFlag.v
 L0 18
-R6
+R4
 r1
 !s85 0
 31
-Z22 !s108 1444890231.000000
-Z23 !s107 ZerosFlag.v|
-Z24 !s90 -reportprogress|600|-work|work|ZerosFlag.v|
+Z29 !s108 1444890231.000000
+Z30 !s107 ZerosFlag.v|
+Z31 !s90 -reportprogress|600|-work|work|ZerosFlag.v|
 !s101 -O0
 !i113 1
-R10
+R6
 ntest@zeros@flag
 vZerosFlag32bit
-R18
+R25
 !i10b 1
 !s100 1zjW2meI]?cQWjfNY6H141
 Izdl7@bj4UH`<:6]SUj;?Y0
-R2
+R1
 R0
-R19
-R20
-R21
+R26
+R27
+R28
 L0 8
-R6
+R4
 r1
 !s85 0
 31
-R22
-R23
-R24
+R29
+R30
+R31
 !s101 -O0
 !i113 1
-R10
+R6
 n@zeros@flag32bit
