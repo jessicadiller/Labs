@@ -992,7 +992,15 @@ wire 		invertB;
 
 //reg[7:0] a0, b0;
 
-wire[31:0] resultBehavioral;
+wire[31:0] resultAND;
+wire[31:0] resultOR;
+wire[31:0] resultNAND;
+wire[31:0] resultNOR;
+wire[31:0] resultXOR;
+wire[31:0] resultADD;
+wire[31:0] resultSUB;
+wire[31:0] resultSLT;
+
  
 //wire[7:0] sum1;
 //wire carryout1;
@@ -1090,7 +1098,7 @@ test_inputsb[6] = 'h00000000;
 		$display("this is the SLT operation");
 		$display("operandA   operandB  | muxindex  invertB |  result  | behavioral");
 	end
-	$display("%h   %h  |    %h         %h    | %h | %h", operandA, operandB, muxindex, invertB, result, resultSLT);
+	$display("%h   %h  |    %h         %h    | %h ", operandA, operandB, muxindex, invertB, result); //, resultSLT);
 	
   end
 

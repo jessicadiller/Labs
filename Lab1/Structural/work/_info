@@ -8,201 +8,184 @@ z2
 !i10f 100
 cModel Technology
 <<<<<<< HEAD
-L0 321
-Z0 !s108 1444968622.000000
-r1
-!s85 0
-31
-Z1 !s107 Final_MarieCaroline.v|
-Z2 !s90 -reportprogress|300|-work|work|Final_MarieCaroline.v|
-Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
-!s101 -O0
-!i113 1
-Z4 w1443752240
-<<<<<<< HEAD
-L0 121
-R0
-r1
-!s85 0
-31
-R1
-R2
-R3
-!s101 -O0
-!i113 1
-R4
-Z5 nstruct@mux
-<<<<<<< HEAD
-!s100 h0nDl>PYk`9_HM@D5X;oD2
-IHZ0OhiC?ooE@[XkV0=cPh0
-Z6 =======
-!s100 HB?<C3cn9RJojQ0VFh?mL3
-I_2TOo`R8XEVUgal6UQPQU0
-<<<<<<< HEAD
-L0 637
-R0
-r1
-!s85 0
-31
-R1
-R2
-R3
-!s101 -O0
-!i113 1
-R4
-R6
-L0 636
-Z7 OP;L;10.4a;61
-r1
-!s85 0
-31
-R0
-R1
-R2
-!s101 -O0
-!i113 1
-R3
-<<<<<<< HEAD
-L0 192
-R0
-r1
-!s85 0
-31
-R1
-R2
-R3
-!s101 -O0
-!i113 1
-R4
-<<<<<<< HEAD
-L0 277
-R0
-r1
-!s85 0
-31
-R1
-R2
-R3
-!s101 -O0
-!i113 1
-R4
-<<<<<<< HEAD
-L0 234
-R0
-r1
-!s85 0
-31
-R1
-R2
-R3
-!s101 -O0
-!i113 1
-R4
-<<<<<<< HEAD
-!s100 Fle1o21;QH1QPM5zF2ePj2
-IImUB8:ZLd=`hGkKU`<V5Y2
-R6
-!s100 I02:m:UClNg6mSUncoI1a0
-I_I1n]B_4>6kTL>fPLH5I@1
-<<<<<<< HEAD
-L0 894
-R0
-r1
-!s85 0
-31
-R1
-R2
-R3
-!s101 -O0
-!i113 1
-R4
-nbehavioral@full@subtractor
-<<<<<<< HEAD
-L0 149
-R0
-r1
-!s85 0
-31
-R1
-R2
-R3
-!s101 -O0
-!i113 1
-R3
-<<<<<<< HEAD
-!s100 9^@Y`4SOa>B=d]GB^4E@V3
-IDVDA5_RA;[b3gRmDO7jLf0
-R6
-!s100 K;gJgz>EO<4nb5Gzgf7Di3
-IbfDM@f@?K8OV0kZgdK;dh2
-<<<<<<< HEAD
-L0 98
-R0
-r1
-!s85 0
-31
-R1
-R2
-R3
-!s101 -O0
-!i113 1
-R3
-R6
-L0 95
-R7
-r1
-!s85 0
-31
-R0
-R1
-R2
-!s101 -O0
-!i113 1
-R3
+Z0 dC:/Labs/Lab1/Structural
 <<<<<<< HEAD
 !s100 812z[j4@A5@cJ9d4Dc7aA3
 IVRL9=iEFT<`88_GKTm8nl3
-R6
+Z1 =======
 !s100 ]j?N@oQjAIT]Gbk[FG^B43
 IIO@?S3E_P3PN>MDLdX?Ji0
 <<<<<<< HEAD
-Z8 dC:/Labs/Lab1/Structural
+L0 98
+Z2 !s108 1444968622.000000
+r1
+!s85 0
+31
+Z3 !s107 Final_MarieCaroline.v|
+Z4 !s90 -reportprogress|300|-work|work|Final_MarieCaroline.v|
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+!s101 -O0
+!i113 1
+R5
+R1
+L0 95
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+R2
+R3
+R4
+!s101 -O0
+!i113 1
+R5
+<<<<<<< HEAD
+!s100 9^@Y`4SOa>B=d]GB^4E@V3
+IDVDA5_RA;[b3gRmDO7jLf0
+R1
+!s100 K;gJgz>EO<4nb5Gzgf7Di3
+IbfDM@f@?K8OV0kZgdK;dh2
+<<<<<<< HEAD
+L0 149
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+!s101 -O0
+!i113 1
+R5
+<<<<<<< HEAD
+L0 894
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+!s101 -O0
+!i113 1
+Z7 w1443752240
+nbehavioral@full@subtractor
+<<<<<<< HEAD
+!s100 Fle1o21;QH1QPM5zF2ePj2
+IImUB8:ZLd=`hGkKU`<V5Y2
+R1
+!s100 I02:m:UClNg6mSUncoI1a0
+I_I1n]B_4>6kTL>fPLH5I@1
+<<<<<<< HEAD
+L0 234
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+!s101 -O0
+!i113 1
+R7
+<<<<<<< HEAD
+L0 277
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+!s101 -O0
+!i113 1
+R7
+<<<<<<< HEAD
+L0 192
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+!s101 -O0
+!i113 1
+R7
+<<<<<<< HEAD
+L0 637
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+!s101 -O0
+!i113 1
+R7
+R1
+L0 636
+R6
+r1
+!s85 0
+31
+R2
+R3
+R4
+!s101 -O0
+!i113 1
+R5
+<<<<<<< HEAD
+!s100 h0nDl>PYk`9_HM@D5X;oD2
+IHZ0OhiC?ooE@[XkV0=cPh0
+R1
+!s100 HB?<C3cn9RJojQ0VFh?mL3
+I_2TOo`R8XEVUgal6UQPQU0
+<<<<<<< HEAD
+L0 121
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+!s101 -O0
+!i113 1
+R7
+Z8 nstruct@mux
+<<<<<<< HEAD
+L0 321
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+!s101 -O0
+!i113 1
+R7
 >>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
+n@a@l@u
 >>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
 Z9 VDg1SIo80bB@j0V0VzS_@n1
-R8
+R0
 Z10 w1444968525
 Z11 8Final_MarieCaroline.v
 Z12 FFinal_MarieCaroline.v
 >>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
-R9
-R8
-R10
-R11
-R12
->>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
-n@s@l@t32bit
+n@a@l@ucontrol@l@u@t
 >>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
 R9
-R8
+R0
 R10
 R11
 R12
 >>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
 R9
-R8
-R10
-R11
-R12
->>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
-R9
-R8
-R10
-R11
-R12
->>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
-R9
-R8
+R0
 R10
 R11
 R12
@@ -210,68 +193,85 @@ R12
 n@full@add@subtract32bit
 >>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
 R9
-R8
+R0
 R10
 R11
 R12
 >>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
 R9
-R8
+R0
 R10
 R11
 R12
->>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
-n@a@l@ucontrol@l@u@t
 >>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
 R9
-R8
+R0
 R10
 R11
 R12
 >>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
-n@a@l@u
+R9
+R0
+R10
+R11
+R12
+>>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
+n@s@l@t32bit
+>>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
+R9
+R0
+R10
+R11
+R12
+>>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
+R9
+R0
+R10
+R11
+R12
+>>>>>>> 31d9c2edd278ce7d22696831f0fe3d91eb467afb
 vALU
-Z13 !s110 1444972635
+Z13 !s110 1444973138
 !i10b 1
 Z14 !s100 M:@dceedWDokXMhA]Cb^K3
 Z15 I8P8GThO<C3L:QJzF5o:CW1
 R9
 Z16 dc:/users/jdiller/Documents/Labs/Lab1/Structural
-Z17 w1444972587
+Z17 w1444973129
 Z18 8for_loop_test_jdilleredit.v
 Z19 Ffor_loop_test_jdilleredit.v
 Z20 L0 18
-R7
+R6
 r1
 !s85 0
 31
-Z21 !s108 1444972635.000000
+Z21 !s108 1444973138.000000
 Z22 !s107 for_loop_test_jdilleredit.v|
 Z23 !s90 -reportprogress|300|-work|work|for_loop_test_jdilleredit.v|
 !s101 -O0
 !i113 1
-R3
+R5
 vALU
-Z24 !s110 1444972318
+Z24 !s110 1444973131
 !i10b 1
 R14
 R15
 R9
 R16
-Z25 w1444972316
+R17
 R18
 R19
 R20
-R7
+R6
 r1
 !s85 0
 31
-Z26 !s108 1444972318.000000
+Z25 !s108 1444973131.000000
 R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vALUcontrolLUT
 R13
 !i10b 1
@@ -283,7 +283,7 @@ R17
 R18
 R19
 L0 101
-R7
+R6
 r1
 !s85 0
 31
@@ -292,7 +292,7 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vand32bit
 R13
 !i10b 1
@@ -304,7 +304,7 @@ R17
 R18
 R19
 L0 152
-R7
+R6
 r1
 !s85 0
 31
@@ -313,19 +313,19 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vbehavioralFullAdder
-Z27 !s110 1444972636
+R13
 !i10b 1
-Z28 !s100 d_^c@ia0obJHg^Uk?kdVl3
-Z29 I]C;;3IGc9QEUjOL_Hc=]21
+Z26 !s100 d_^c@ia0obJHg^Uk?kdVl3
+Z27 I]C;;3IGc9QEUjOL_Hc=]21
 R9
 R16
 R17
 R18
 R19
-Z30 L0 903
-R7
+Z28 L0 903
+R6
 r1
 !s85 0
 31
@@ -334,32 +334,32 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
-Z31 nbehavioral@full@adder
+R5
+Z29 nbehavioral@full@adder
 vbehavioralFullAdder
 R24
 !i10b 1
-R28
-R29
+R26
+R27
 R9
 R16
-R25
+R17
 R18
 R19
-R30
-R7
+R28
+R6
 r1
 !s85 0
 31
-R26
+R25
 R22
 R23
 !s101 -O0
 !i113 1
-R3
-R31
+R5
+R29
 vbehavioralFullAnd
-R27
+R13
 !i10b 1
 !s100 2?[lTQ3BG5fN>@8hFg1i22
 Ih]g52cHACJAfCV2B`3eMF1
@@ -369,7 +369,7 @@ R17
 R18
 R19
 L0 917
-R7
+R6
 r1
 !s85 0
 31
@@ -378,10 +378,10 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 nbehavioral@full@and
 vbehavioralFullNand
-R27
+R13
 !i10b 1
 !s100 n4YNMZ45lV1>RH1N<idUo2
 I_@3Q<IO_aSk?:YLX__X:73
@@ -391,7 +391,7 @@ R17
 R18
 R19
 L0 930
-R7
+R6
 r1
 !s85 0
 31
@@ -400,10 +400,10 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 nbehavioral@full@nand
 vbehavioralFullNor
-R27
+R13
 !i10b 1
 !s100 @`><5UQY8j3;J><V5A6He3
 I>hW0DJ;C@_<9;lLM7Sh0e1
@@ -413,7 +413,7 @@ R17
 R18
 R19
 L0 934
-R7
+R6
 r1
 !s85 0
 31
@@ -422,10 +422,10 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 nbehavioral@full@nor
 vbehavioralFullOr
-R27
+R13
 !i10b 1
 !s100 Zzbz6f[=;kHmk5^Pa>>dR2
 IMF9YHHfQ]0AJh7hbP;iBP1
@@ -435,7 +435,7 @@ R17
 R18
 R19
 L0 922
-R7
+R6
 r1
 !s85 0
 31
@@ -444,10 +444,10 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 nbehavioral@full@or
 vbehavioralFullSlt
-R27
+R13
 !i10b 1
 !s100 ?ZLMKN5R^okk1BiDi=SY01
 I1L66Sm;z66VYcLzU@3zn_0
@@ -457,7 +457,7 @@ R17
 R18
 R19
 L0 912
-R7
+R6
 r1
 !s85 0
 31
@@ -466,10 +466,10 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 nbehavioral@full@slt
 vbehavioralFullSubtractor
-R27
+R13
 !i10b 1
 !s100 k0eiz9[]G4ET:Il_NWBOA3
 IhOg3B]le?_;]1cW4onU5I3
@@ -479,7 +479,7 @@ R17
 R18
 R19
 L0 908
-R7
+R6
 r1
 !s85 0
 31
@@ -488,9 +488,9 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vbehavioralFullXor
-R27
+R13
 !i10b 1
 !s100 0ezNMaO92MQQb_Q;T:gJ]2
 I:WB?iCb1BZ_bbcfSbSOi?3
@@ -500,7 +500,7 @@ R17
 R18
 R19
 L0 926
-R7
+R6
 r1
 !s85 0
 31
@@ -509,30 +509,8 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 nbehavioral@full@xor
-vFullAdder1bit
-Z32 !s110 1444845330
-!i10b 1
-!s100 6``c5a3FXZ<8GZKRmZhR=0
-Id?>2SQ>TJ3;<bJO?[@zhz0
-R9
-Z33 dC:/Labs/Lab0
-Z34 w1444845325
-Z35 8addersubtractor.v
-Z36 Faddersubtractor.v
-L0 7
-R0
-r1
-!s85 0
-31
-Z37 !s108 1444845330.000000
-Z38 !s107 addersubtractor.v|
-Z39 !s90 -reportprogress|600|-work|work|addersubtractor.v|
-!s101 -O0
-!i113 1
-R4
-Z40 n@full@adder1bit
 vFullAdder1bit
 !i10b 1
 R9
@@ -541,19 +519,41 @@ r1
 31
 !s100 _l>lQQaSGeLXiY;cM8g2f1
 IJ^0XN2ZZN1>M?j]>I_4nJ0
-R33
-R4
-Z41 84bitadder2.v
-Z42 F4bitadder2.v
-L0 7
+Z30 dC:/Labs/Lab0
 R7
-Z43 !s108 1443795163.000000
-Z44 !s107 4bitadder2.v|
-Z45 !s90 -reportprogress|300|-work|work|4bitadder2.v|
+Z31 84bitadder2.v
+Z32 F4bitadder2.v
+L0 7
+R6
+Z33 !s108 1443795163.000000
+Z34 !s107 4bitadder2.v|
+Z35 !s90 -reportprogress|300|-work|work|4bitadder2.v|
 !s101 -O0
 !i113 1
-R3
-R40
+R5
+Z36 n@full@adder1bit
+vFullAdder1bit
+Z37 !s110 1444845330
+!i10b 1
+!s100 6``c5a3FXZ<8GZKRmZhR=0
+Id?>2SQ>TJ3;<bJO?[@zhz0
+R9
+R30
+Z38 w1444845325
+Z39 8addersubtractor.v
+Z40 Faddersubtractor.v
+L0 7
+R2
+r1
+!s85 0
+31
+Z41 !s108 1444845330.000000
+Z42 !s107 addersubtractor.v|
+Z43 !s90 -reportprogress|600|-work|work|addersubtractor.v|
+!s101 -O0
+!i113 1
+R7
+R36
 vFullAdder4bit
 !i10b 1
 R9
@@ -562,31 +562,31 @@ r1
 31
 !s100 GOh:6ne8bgRBjXo9K>jmX1
 IhjBKRG4Z8LnEg=0AeFPXV1
-R33
-R4
-R41
-R42
-L0 29
+R30
 R7
-R43
-R44
-R45
+R31
+R32
+L0 29
+R6
+R33
+R34
+R35
 !s101 -O0
 !i113 1
-R3
+R5
 n@full@adder4bit
 vFullAddSubtract32bit
-R27
+R13
 !i10b 1
-Z46 !s100 5CIg8P>7ZUME?o[BoJT772
-Z47 ImJ9FTT<daoPjLPVkiCMOj3
+Z44 !s100 5CIg8P>7ZUME?o[BoJT772
+Z45 ImJ9FTT<daoPjLPVkiCMOj3
 R9
 R16
 R17
 R18
 R19
-Z48 L0 366
-R7
+Z46 L0 366
+R6
 r1
 !s85 0
 31
@@ -595,28 +595,28 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vFullAddSubtract32bit
 R24
 !i10b 1
-R46
-R47
+R44
+R45
 R9
 R16
-R25
+R17
 R18
 R19
-R48
-R7
+R46
+R6
 r1
 !s85 0
 31
-R26
+R25
 R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vnand32bit
 R13
 !i10b 1
@@ -628,7 +628,7 @@ R17
 R18
 R19
 L0 237
-R7
+R6
 r1
 !s85 0
 31
@@ -637,19 +637,19 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vnor32bit
 R13
 !i10b 1
-Z49 !s100 Vce9Onz^<<dic6Ll9V0Gc3
-Z50 IizOF<<FzU;6joL@11cFl83
+Z47 !s100 Vce9Onz^<<dic6Ll9V0Gc3
+Z48 IizOF<<FzU;6joL@11cFl83
 R9
 R16
 R17
 R18
 R19
-Z51 L0 280
-R7
+Z49 L0 280
+R6
 r1
 !s85 0
 31
@@ -658,40 +658,40 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vnor32bit
 R24
 !i10b 1
+R47
+R48
+R9
+R16
+R17
+R18
+R19
 R49
-R50
-R9
-R16
-R25
-R18
-R19
-R51
-R7
+R6
 r1
 !s85 0
 31
-R26
+R25
 R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vor32bit
 R13
 !i10b 1
-Z52 !s100 58lk_C8PJami9U8ED?>XP3
-Z53 IXAA[=XaCz@929?O:0V_lH2
+Z50 !s100 58lk_C8PJami9U8ED?>XP3
+Z51 IXAA[=XaCz@929?O:0V_lH2
 R9
 R16
 R17
 R18
 R19
-Z54 L0 195
-R7
+Z52 L0 195
+R6
 r1
 !s85 0
 31
@@ -700,40 +700,40 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vor32bit
 R24
 !i10b 1
-R52
-R53
-R9
-R16
-R25
-R18
-R19
-R54
-R7
-r1
-!s85 0
-31
-R26
-R22
-R23
-!s101 -O0
-!i113 1
-R3
-vSLT32bit
-R27
-!i10b 1
-Z55 !s100 eUBi<38a3nNVzdg=9Ah?:2
-Z56 I?PfOG<g2ARJ7<XcHD9j8Z1
+R50
+R51
 R9
 R16
 R17
 R18
 R19
-Z57 L0 640
-R7
+R52
+R6
+r1
+!s85 0
+31
+R25
+R22
+R23
+!s101 -O0
+!i113 1
+R5
+vSLT32bit
+R13
+!i10b 1
+Z53 !s100 eUBi<38a3nNVzdg=9Ah?:2
+Z54 I?PfOG<g2ARJ7<XcHD9j8Z1
+R9
+R16
+R17
+R18
+R19
+Z55 L0 640
+R6
 r1
 !s85 0
 31
@@ -742,28 +742,28 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vSLT32bit
 R24
 !i10b 1
-R55
-R56
+R53
+R54
 R9
 R16
-R25
+R17
 R18
 R19
-R57
-R7
+R55
+R6
 r1
 !s85 0
 31
-R26
+R25
 R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vstructMux
 R13
 !i10b 1
@@ -775,7 +775,7 @@ R17
 R18
 R19
 L0 124
-R7
+R6
 r1
 !s85 0
 31
@@ -784,7 +784,7 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vstructural4bitFullAdder
 !i10b 1
 R9
@@ -793,31 +793,31 @@ r1
 31
 !s100 PfCF1_<?d50UVGNbUJYT?2
 INm=SjNl_2Ag>Q2VSlRdn[2
-R33
+R30
 w1443662692
-R32
-R34
-L0 7
-R7
-!s108 1443662735.000000
-R36
 R37
+R38
+L0 7
+R6
+!s108 1443662735.000000
+R40
+R41
 !s101 -O0
 !i113 1
-R3
+R5
 nstructural4bit@full@adder
 vtest_looping
-R27
+R13
 !i10b 1
-!s100 jZLHF=iQJmeWGG`YMNJ^g0
-I@1=@M;GYJiB:QGd=Oe@NZ2
+Z56 !s100 OR;a]?E=`WD_6l>f>]Q>M2
+Z57 ISm`;jmil@jJUHIG]kT:lN3
 R9
 R16
 R17
 R18
 R19
 Z58 L0 976
-R7
+R6
 r1
 !s85 0
 31
@@ -826,28 +826,28 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vtest_looping
 R24
 !i10b 1
-!s100 ZJ@ZZl?VgU45I<6>oof?e3
-IgFJl2dVf21h;3hF_aQMld0
+R56
+R57
 R9
 R16
-R25
+R17
 R18
 R19
 R58
-R7
+R6
 r1
 !s85 0
 31
-R26
+R25
 R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 vtestFullAdder
 !i10b 1
 R9
@@ -856,40 +856,40 @@ r1
 31
 !s100 1fKaH?<zk7IIF>YY@OSje1
 I2WkUbWz;^SU4[8e1YoMaU3
-R33
-R4
-R32
-R34
-L0 75
+R30
 R7
-R35
-R36
 R37
+R38
+L0 75
+R6
+R39
+R40
+R41
 !s101 -O0
 !i113 1
-R3
+R5
 ntest@full@adder
 vtestFullAddsubtract
-R32
+R37
 !i10b 1
 !s100 ogO??VCf`=9>>28dMYN@c2
 ImoRfk[GL_ZXC?>oVeXbA:1
 R9
-R33
-R34
-R35
-R36
+R30
+R38
+R39
+R40
 L0 303
-R0
+R2
 r1
 !s85 0
 31
-R37
-R38
-R39
+R41
+R42
+R43
 !s101 -O0
 !i113 1
-R4
+R7
 ntest@full@addsubtract
 vtestSLT32bit
 !s110 1444881691
@@ -897,12 +897,12 @@ vtestSLT32bit
 !s100 RX4oLzMldM_Z;XZ@lP8m<0
 IETKi6P8oAUog^M9P?Ik6[2
 R9
-R33
+R30
 w1444881688
 8slt.v
 Fslt.v
 L0 259
-R0
+R2
 r1
 !s85 0
 31
@@ -911,7 +911,7 @@ r1
 !s90 -reportprogress|600|-work|work|slt.v|
 !s101 -O0
 !i113 1
-R4
+R7
 ntest@s@l@t32bit
 vtestZerosFlag
 Z59 !s110 1444890231
@@ -919,12 +919,12 @@ Z59 !s110 1444890231
 !s100 7oFg99=M[mU[6S^LVFlh^2
 I2=XM@NgJ:A<2kahW]O_]32
 R9
-R33
+R30
 Z60 w1444890228
 Z61 8ZerosFlag.v
 Z62 FZerosFlag.v
-R7
-R0
+R6
+R2
 r1
 !s85 0
 31
@@ -933,7 +933,7 @@ Z64 !s107 ZerosFlag.v|
 Z65 !s90 -reportprogress|600|-work|work|ZerosFlag.v|
 !s101 -O0
 !i113 1
-R4
+R7
 ntest@zeros@flag
 vxor32bit
 R13
@@ -946,7 +946,7 @@ R17
 R18
 R19
 Z68 L0 324
-R7
+R6
 r1
 !s85 0
 31
@@ -955,7 +955,8 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
+R8
 vxor32bit
 R24
 !i10b 1
@@ -963,23 +964,22 @@ R66
 R67
 R9
 R16
-R25
+R17
 R18
 R19
 R68
-R7
+R6
 r1
 !s85 0
 31
-R26
+R25
 R22
 R23
 !s101 -O0
 !i113 1
-R3
 R5
 vZeroFlag32bit
-R27
+R13
 !i10b 1
 !s100 c=c:8g<ZkRWVd9=V2>`o@0
 IeGVJSk:LbM8]09<762F[`1
@@ -989,7 +989,7 @@ R17
 R18
 R19
 L0 892
-R7
+R6
 r1
 !s85 0
 31
@@ -998,7 +998,7 @@ R22
 R23
 !s101 -O0
 !i113 1
-R3
+R5
 n@zero@flag32bit
 vZerosFlag32bit
 R59
@@ -1006,12 +1006,12 @@ R59
 !s100 1zjW2meI]?cQWjfNY6H141
 Izdl7@bj4UH`<:6]SUj;?Y0
 R9
-R33
+R30
 R60
 R61
 R62
 L0 8
-R0
+R2
 r1
 !s85 0
 31
@@ -1020,17 +1020,17 @@ R64
 R65
 !s101 -O0
 !i113 1
-R4
-n@zeros@flag32bit
-R6
-L0 315
 R7
+n@zeros@flag32bit
+R1
+L0 315
+R6
 r1
 !s85 0
 31
-R0
-R1
 R2
+R3
+R4
 !s101 -O0
 !i113 1
-R3
+R5

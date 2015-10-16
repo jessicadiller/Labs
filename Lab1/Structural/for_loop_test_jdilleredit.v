@@ -42,10 +42,8 @@ wire[31:0] add_sub_output;
 wire[31:0] slt_output;
 
 //then we will need 3 bit  buses to hold the flags from each operation, where a 0 indicates a 0 flag and 1 a 1 flag
-//UNSURE IF WE NEED TO ADD MORE HERE
 ALUcontrolLUT lut(muxindex, invertB, command);
-//?????behavioralFullAnd ander(and_output, operandA, operandB);
-// MORE???
+//behavioralFullAnd ander(and_output, operandA, operandB);
 
 //instantiate the structural operations like this
 and32bit struct_and(and_output, operandA, operandB);
@@ -57,12 +55,9 @@ FullAddSubtract32bit struct_add_sub(add_sub_output, carryout, overflow, operandA
 SLT32bit struct_slt(slt_output, operandA, operandB);
 ZeroFlag32bit struct_zeroflag(zero, result);
 
-
-
 //now we need 32 muxes to simulate one big bus mux
 //each mux will calculate one bit of the result output
 //alllllll of the muxes to simulate a 32 bit bus mux
-
 structMux mux0(result[0], muxindex[0], muxindex[1],muxindex[2], add_sub_output[0],  xor_output[0], slt_output[0],and_output[0], nand_output[0], nor_output[0], or_output[0]);
 structMux mux1(result[1], muxindex[0], muxindex[1],muxindex[2], add_sub_output[1],  xor_output[1], slt_output[1],and_output[1], nand_output[1], nor_output[1], or_output[1]);
 structMux mux2(result[2], muxindex[0], muxindex[1],muxindex[2], add_sub_output[2],  xor_output[2], slt_output[2],and_output[2], nand_output[2], nor_output[2], or_output[2]);
@@ -1098,7 +1093,7 @@ test_inputsb[6] = 'h00000000;
 		$display("this is the SLT operation");
 		$display("operandA   operandB  | muxindex  invertB |  result  | behavioral");
 	end
-	$display("%h   %h  |    %h         %h    | %h | %h", operandA, operandB, muxindex, invertB, result, resultSLT);
+	$display("%h   %h  |    %h         %h    | %h ", operandA, operandB, muxindex, invertB, result); //, resultSLT);
 	
   end
 
