@@ -1093,7 +1093,11 @@ test_inputsb[6] = 'h00000000;
 		$display("this is the SLT operation");
 		$display("operandA   operandB  | muxindex  invertB |  result  | behavioral");
 	end
+<<<<<<< HEAD
 	$display("%h   %h  |    %h         %h    | %h ", operandA, operandB, muxindex, invertB, result); //, resultSLT);
+=======
+	$display("%h   %h  |    %h         %h    | %h |", operandA, operandB, muxindex, invertB, result);
+>>>>>>> 24dd2b70f6dc0d8c12588cc3d2837bdc8aadc527
 	
   end
 
