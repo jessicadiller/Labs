@@ -1031,9 +1031,9 @@ test_inputsb[6] = 'h00000000;
 
 	if (i == 0) begin
 		$display("this is the ADD operation");
-		$display("operandA   operandB  | muxindex  invertB | result expected result");
+		$display("operandA   operandB  | muxindex  invertB | result expected  | carryout expected | overflow");
 	end
-	$display("%h   %h  |    %h         %h    | %h   %h  ", operandA, operandB, muxindex, invertB, result, addsum);
+	$display("%h   %h  |    %h         %h    | %h   %h  | %h %h | %h ", operandA, operandB, muxindex, invertB, result, addsum, carryout, carryoutB, overflow);
 	
   end
 

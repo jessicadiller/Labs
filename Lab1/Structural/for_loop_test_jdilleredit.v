@@ -992,39 +992,30 @@ wire 		invertB;
 
 //reg[7:0] a0, b0;
 
-//wire[7:0] sum0;
-//wire carryout0;
-//reg[7:0] a1, b1;
+wire[31:0] resultAND;
+wire[31:0] resultOR;
+wire[31:0] resultNAND;
+wire[31:0] resultNOR;
+wire[31:0] resultXOR;
+wire[31:0] resultADD;
+wire[31:0] resultSUB;
+wire[31:0] resultSLT;
+
  
 //wire[7:0] sum1;
 //wire carryout1;
 
 ALU behavioralalu(result, carryout, zero, overflow, operandA, operandB, command, muxindex, invertB);
 
+//behavioral function intializations
 //behavioralFullAdder adder0(sum0, carryout0, a0, b0, carryin0);
-//behavioralFullAdder adder1(sum1, carryout1, a1, b1, carryin1);
-
 //behavioralFullSubtractor subtract0(sum0, carryout0, a0, b0, carryin0);
-//behavioralFullSubtractor subtract1(sum1, carryout1, a1, b1, carryin1);
-
-//behavioralFullAnd and0(sum0, a0 ,b0);
-//behavioralFullAnd and1(sum1, a1, b1);
-
-//behavioralFullOr or0(sum0, a0, b0);
-//behavioralFullOr or1(sum1, a1, b1);
-
-//behavioralFullXor xor0(sum0, a0, b0);
-//behavioralFullXor xor1(sum1, a1, b1);
-
-//behavioralFullNand nand0(sum0, a0, b0);
-//behavioralFullNand nand1(sum1, a1, b1);
-
-//behavioralFullNor nor0(sum0, a0, b0);
-//behavioralFullNor nor1(sum1, a1, b1);
-
-//behavioralFullSlt slt0(sum0, a0, b0);
-//behavioralFullSlt slt1(sum1, a1, b1);
-
+behavioralFullAnd andB(resultAND, operandA , operandB);
+behavioralFullOr orB(resultOR, operandA , operandB);
+behavioralFullXor xor0(resultXOR, operandA , operandB);
+behavioralFullNand nand0(resultNAND, operandA , operandB);
+behavioralFullNor nor0(resultNOR, operandA , operandB);
+behavioralFullSlt slt0(resultSLT, operandA, operandB);
 
 reg [31:0] test_inputsa[0:6]; //array of 32 bit bus signals, 7 elements in the array
 reg [31:0] test_inputsb[0:6]; //second array of inputs
@@ -1052,48 +1043,49 @@ test_inputsa[6] = 'hffffffff;
 test_inputsb[6] = 'h00000000;
 
 	
-  //ADD LOOP has some random commented stuff
-  for (i = 0; i < iterations_add; i = i + 1) begin
-	
-	operandA = test_inputsa[i];
-	operandB = test_inputsb[i];
-	//a1 = test_inputsa[i+1];
-	//b1 = test_inputsb[i+1];
-	command = 3'd0;
-	#300
-	/*
-	if (sum0==sum1) begin
-    		#5 $display("the sums are equal");
-		#5 $display("they are both: %b",sum0);
-	end
-	else begin
-		#5 $display("the sums are not equal");
-		#5 $display("sum0= %b, sum1= %b",sum0, sum1);
-	end
-	*/
-	if (i == 0) begin
-		$display("this is the ADD operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
-	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
-	
-  end
-
-//SUB LOOP
-  for (i = 0; i < iterations_add; i = i + 1) begin
-	
-	operandA = test_inputsa[i];
-	operandB = test_inputsb[i];
-	command = 3'd1;
-	#300
-	if (i == 0) begin
-		$display("this is the SUB operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
-	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
-	
-  end
-
+//  //ADD LOOP has some random commented stuff
+//  for (i = 0; i < iterations_add; i = i + 1) begin
+//	
+//	operandA = test_inputsa[i];
+//	operandB = test_inputsb[i];
+//	//a1 = test_inputsa[i+1];
+//	//b1 = test_inputsb[i+1];
+//	command = 3'd0;
+//	#300
+//	/*
+//	if (sum0==sum1) begin
+//    		#5 $display("the sums are equal");
+//		#5 $display("they are both: %b",sum0);
+//	end
+//	else begin
+//		#5 $display("the sums are not equal");
+//		#5 $display("sum0= %b, sum1= %b",sum0, sum1);
+//	end
+//	*/
+//	if (i == 0) begin
+//		$display("this is the ADD operation");
+//		$display("operandA   operandB  | muxindex  invertB | result");
+//	end
+//	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+//	
+//  end
+//
+////SUB LOOP
+//  for (i = 0; i < iterations_add; i = i + 1) begin
+//	
+//	operandA = test_inputsa[i];
+//	operandB = test_inputsb[i];
+//	command = 3'd1;
+//	#300
+//	if (i == 0) begin
+//		$display("this is the SUB operation");
+//		$display("operandA   operandB  | muxindex  invertB | result");
+//	end
+//	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+//	
+//  end
+//
+//
 
 //SLT LOOP
   for (i = 0; i < iterations_add; i = i + 1) begin
@@ -1104,24 +1096,23 @@ test_inputsb[6] = 'h00000000;
 	#300
 	if (i == 0) begin
 		$display("this is the SLT operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+		$display("operandA   operandB  | muxindex  invertB |  result  | behavioral");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+	$display("%h   %h  |    %h         %h    | %h |", operandA, operandB, muxindex, invertB, result);
 	
   end
 
  //AND LOOP
 for (i = 3; i < iterations_simple; i = i + 1) begin
-	
 	operandA = test_inputsa[i];
 	operandB = test_inputsb[i];
 	command = 3'd4;
 	#300
 	if (i == 3) begin
 		$display("this is the AND operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+		$display("operandA   operandB  | muxindex  invertB |  result  | behavioral");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+	$display("%h   %h  |    %h         %h    | %h | %h", operandA, operandB, muxindex, invertB, result, resultAND);
 	
   end
 
@@ -1135,9 +1126,9 @@ for (i = 3; i < iterations_simple; i = i + 1) begin
 	#300
 	if (i == 3) begin
 		$display("this is the OR operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+		$display("operandA   operandB  | muxindex  invertB |  result  | behavioral");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+	$display("%h   %h  |    %h         %h    | %h | %h", operandA, operandB, muxindex, invertB, result, resultOR);
 	
   end
 
@@ -1151,9 +1142,9 @@ for (i = 3; i < iterations_simple; i = i + 1) begin
 	#300
 	if (i == 3) begin
 		$display("this is the NAND operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+		$display("operandA   operandB  | muxindex  invertB |  result  | behavioral");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+	$display("%h   %h  |    %h         %h    | %h | %h", operandA, operandB, muxindex, invertB, result, resultNAND);
 	
   end
 
@@ -1166,10 +1157,10 @@ for (i = 3; i < iterations_simple; i = i + 1) begin
 	#300
 	if (i == 3) begin
 		$display("this is the NOR operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+		$display("operandA   operandB  | muxindex  invertB |  result  | behavioral");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
-	
+	$display("%h   %h  |    %h         %h    | %h | %h", operandA, operandB, muxindex, invertB, result, resultNOR);
+
   end
 
 
@@ -1182,9 +1173,9 @@ for (i = 3; i < iterations_simple; i = i + 1) begin
 	#300
 	if (i == 3) begin
 		$display("this is the XOR operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+		$display("operandA   operandB  | muxindex  invertB |  result  | behavioral");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+	$display("%h   %h  |    %h         %h    | %h | %h", operandA, operandB, muxindex, invertB, result, resultXOR);
   end
 
 
