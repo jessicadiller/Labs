@@ -1044,97 +1044,97 @@ test_inputsb[8] = 'h00000000;
   end
 
 
-//SLT LOOP
-  for (i = 0; i < iterations_add; i = i + 1) begin
-	
-	operandA = test_inputsa[i];
-	operandB = test_inputsb[i];
-	command = 3'd3;
-	#1000
-	if (i == 0) begin
-		$display("this is the SLT operation");
-		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
-	end
-	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, result, resultSLT);
-	
-  end
-
- //AND LOOP
-for (i = 5; i < iterations_simple; i = i + 1) begin
-	
-	operandA = test_inputsa[i];
-	operandB = test_inputsb[i];
-	command = 3'd4;
-	#300
-	if (i == 5) begin
-		$display("this is the AND operation");
-		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
-	end
-	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultAND, result);
-	
-  end
-
-
-//OR LOOP
-for (i = 5; i < iterations_simple; i = i + 1) begin
-	
-	operandA = test_inputsa[i];
-	operandB = test_inputsb[i];
-	command = 3'd7;
-	#300
-	if (i == 5) begin
-		$display("this is the OR operation");
-		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
-	end
-	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultOR, result);
-	
-  end
-
-
-//NAND LOOP
-for (i = 5; i < iterations_simple; i = i + 1) begin
-	
-	operandA = test_inputsa[i];
-	operandB = test_inputsb[i];
-	command = 3'd5;
-	#300
-	if (i == 5) begin
-		$display("this is the NAND operation");
-		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
-	end
-	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultNAND, result);
-	
-  end
-
-
-//NOR LOOP
-for (i = 5; i < iterations_simple; i = i + 1) begin
-	operandA = test_inputsa[i];
-	operandB = test_inputsb[i];
-	command = 3'd6;
-	#300
-	if (i == 5) begin
-		$display("this is the NOR operation");
-		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
-	end
-	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultNOR, result);
-	
-  end
-
-
-//XOR LOOP
-for (i = 5; i < iterations_simple; i = i + 1) begin
-	
-	operandA = test_inputsa[i];
-	operandB = test_inputsb[i];
-	command = 3'd2;
-	#300
-	if (i == 5) begin
-		$display("this is the XOR operation");
-		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
-	end
-	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultXOR, result);
-  end
+////SLT LOOP
+//  for (i = 0; i < iterations_add; i = i + 1) begin
+//	
+//	operandA = test_inputsa[i];
+//	operandB = test_inputsb[i];
+//	command = 3'd3;
+//	#1000
+//	if (i == 0) begin
+//		$display("this is the SLT operation");
+//		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+//	end
+//	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, result, resultSLT);
+//	
+//  end
+//
+// //AND LOOP
+//for (i = 5; i < iterations_simple; i = i + 1) begin
+//	
+//	operandA = test_inputsa[i];
+//	operandB = test_inputsb[i];
+//	command = 3'd4;
+//	#300
+//	if (i == 5) begin
+//		$display("this is the AND operation");
+//		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+//	end
+//	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultAND, result);
+//	
+//  end
+//
+//
+////OR LOOP
+//for (i = 5; i < iterations_simple; i = i + 1) begin
+//	
+//	operandA = test_inputsa[i];
+//	operandB = test_inputsb[i];
+//	command = 3'd7;
+//	#300
+//	if (i == 5) begin
+//		$display("this is the OR operation");
+//		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+//	end
+//	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultOR, result);
+//	
+//  end
+//
+//
+////NAND LOOP
+//for (i = 5; i < iterations_simple; i = i + 1) begin
+//	
+//	operandA = test_inputsa[i];
+//	operandB = test_inputsb[i];
+//	command = 3'd5;
+//	#300
+//	if (i == 5) begin
+//		$display("this is the NAND operation");
+//		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+//	end
+//	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultNAND, result);
+//	
+//  end
+//
+//
+////NOR LOOP
+//for (i = 5; i < iterations_simple; i = i + 1) begin
+//	operandA = test_inputsa[i];
+//	operandB = test_inputsb[i];
+//	command = 3'd6;
+//	#300
+//	if (i == 5) begin
+//		$display("this is the NOR operation");
+//		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+//	end
+//	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultNOR, result);
+//	
+//  end
+//
+//
+////XOR LOOP
+//for (i = 5; i < iterations_simple; i = i + 1) begin
+//	
+//	operandA = test_inputsa[i];
+//	operandB = test_inputsb[i];
+//	command = 3'd2;
+//	#300
+//	if (i == 5) begin
+//		$display("this is the XOR operation");
+//		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+//	end
+//	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultXOR, result);
+//  end
 
 
 end
