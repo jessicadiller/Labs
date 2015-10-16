@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Labs/Lab1/Structural
 vALU
-Z1 !s110 1444938677
+Z1 !s110 1444970176
 !i10b 1
 !s100 BQDO1:AJFb6M6?SX:6E;k3
 I<l3`o6GkL^ZoTcI5n8>8@1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dC:/users/jdiller/Documents/Labs/Lab1/Structural
-Z4 w1444938674
+Z3 dc:/users/jdiller/Documents/Labs/Lab1/Structural
+Z4 w1444970172
 Z5 8for_loop_test_jdilleredit.v
 Z6 Ffor_loop_test_jdilleredit.v
 Z7 L0 18
@@ -23,7 +23,7 @@ Z8 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z9 !s108 1444938676.000000
+Z9 !s108 1444970176.000000
 Z10 !s107 for_loop_test_jdilleredit.v|
 Z11 !s90 -reportprogress|300|-work|work|for_loop_test_jdilleredit.v|
 !s101 -O0
@@ -403,8 +403,8 @@ nstruct@mux
 vtest_looping
 R1
 !i10b 1
-!s100 QQ_A@f^M><K5c?<^:kaUn3
-Ib_^cknJ:I03FhLlaUT1Yk2
+!s100 2Ae[F=oD93H^[^?Q2e7BS1
+I1ADhMFAiCLZj^QzQ_IWE53
 R2
 R3
 R4
