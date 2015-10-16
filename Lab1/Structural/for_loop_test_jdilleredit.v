@@ -55,6 +55,9 @@ nor32bit struct_nor(nor_output, operandA, operandB);
 xor32bit struct_xor(xor_output, operandA, operandB);
 FullAddSubtract32bit struct_add_sub(add_sub_output, carryout, overflow, operandA, operandB, invertB);
 SLT32bit struct_slt(slt_output, operandA, operandB);
+ZeroFlag32bit struct_zeroflag(zero, result);
+
+
 
 //now we need 32 muxes to simulate one big bus mux
 //each mux will calculate one bit of the result output
@@ -883,6 +886,17 @@ assign out[31:1]=0;
 `XOR xorslt(out[0], overflow, sum31);
 
 
+endmodule
+
+
+module ZeroFlag32bit //ZeroFlaf 32bit
+(
+
+output zero,
+input[31:0] result
+);
+//NOR everything, if result is 1 all inputs where 0
+`NOR norzero(zero, result[0], result[1], result[2], result[3], result[4], result[5], result[6], result[7], result[8], result[9], result[10], result[11], result[12], result[13], result[14], result[15], result[16], result[17], result[18], result[19], result[20], result[21], result[22], result[23], result[24], result[25], result[26], result[27], result[28], result[29], result[30], result[31]);
 endmodule
 
 //this is working

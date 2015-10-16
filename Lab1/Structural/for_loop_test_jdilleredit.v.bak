@@ -56,6 +56,8 @@ xor32bit struct_xor(xor_output, operandA, operandB);
 FullAddSubtract32bit struct_add_sub(add_sub_output, carryout, overflow, operandA, operandB, invertB);
 SLT32bit struct_slt(slt_output, operandA, operandB);
 
+
+
 //now we need 32 muxes to simulate one big bus mux
 //each mux will calculate one bit of the result output
 //alllllll of the muxes to simulate a 32 bit bus mux
@@ -885,6 +887,7 @@ assign out[31:1]=0;
 
 endmodule
 
+
 //this is working
 module behavioralFullAdder(output[31:0] sum, output carryout, input[31:0] a, input[31:0] b, input carryin);
 assign {carryout, sum}=a+b+carryin;
@@ -1172,6 +1175,7 @@ for (i = 3; i < iterations_simple; i = i + 1) begin
 	end
 	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
   end
+
 
 end
 
