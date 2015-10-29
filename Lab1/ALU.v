@@ -25,7 +25,7 @@ input[31:0]     operandA,
 input[31:0]     operandB,
 input[2:0]      command,
 output[2:0]  	muxindex,
-output 		invertB
+output 		control
 );
 
 //all of the buses to hold result from individual operations before we put them into the mux
@@ -38,7 +38,7 @@ wire[31:0] add_sub_output;
 wire[31:0] slt_output;
 
 
-ALUcontrolLUT lut(muxindex, invertB, command);
+ALUcontrolLUT lut(muxindex, control, command);
 
 
 //instantiate the structural operations like this
@@ -47,7 +47,7 @@ or32bit struct_or(or_output, operandA, operandB);
 nand32bit struct_nand(nand_output, operandA, operandB);
 nor32bit struct_nor(nor_output, operandA, operandB);
 xor32bit struct_xor(xor_output, operandA, operandB);
-FullAddSubtract32bit struct_add_sub(add_sub_output, carryout, overflow, operandA, operandB, invertB);
+FullAddSubtract32bit struct_add_sub(add_sub_output, carryout, overflow, operandA, operandB, control);
 SLT32bit struct_slt(slt_output, operandA, operandB);
 ZeroFlag32bit struct_zeroflag(zero, result);
 
@@ -95,21 +95,21 @@ endmodule
 module ALUcontrolLUT //To control MUX index and Adder or Subtractor
 (
 output reg[2:0]     	muxindex,
-output reg  		invertB,
+output reg  		control,
 input[2:0]  		ALUcommand
 );
 /*This controls the multiplexer that will determine the output of the ALU as well as the control signal for making the add/subtractor subtract*/
 
   always @(ALUcommand) begin
     case (ALUcommand)
-      `ADD_lut:  begin muxindex = 0; invertB=0;  end    
-      `SUB_lut:  begin muxindex = 0; invertB=1;  end
-      `XOR_lut:  begin muxindex = 1; invertB=0;  end    
-      `SLT_lut:  begin muxindex = 2; invertB=0;  end
-      `AND_lut:  begin muxindex = 3; invertB=0;  end    
-      `NAND_lut: begin muxindex = 4; invertB=0;  end
-      `NOR_lut:  begin muxindex = 5; invertB=0;  end    
-      `OR_lut:   begin muxindex = 6; invertB=0;  end
+      `ADD_lut:  begin muxindex = 0; control=0;  end    
+      `SUB_lut:  begin muxindex = 0; control=1;  end
+      `XOR_lut:  begin muxindex = 1; control=0;  end    
+      `SLT_lut:  begin muxindex = 2; control=0;  end
+      `AND_lut:  begin muxindex = 3; control=0;  end    
+      `NAND_lut: begin muxindex = 4; control=0;  end
+      `NOR_lut:  begin muxindex = 5; control=0;  end    
+      `OR_lut:   begin muxindex = 6; control=0;  end
     endcase
   end
 endmodule
@@ -902,11 +902,11 @@ endmodule
 
 //this is working
 module behavioralFullSubtractor(output[31:0] sum, output carryout, input[31:0] a, input[31:0] b, input carryin);
-assign {carryout, sum}=a-b+carryin;
+assign {carryout, sum}=a-b;
 endmodule
 
 module behavioralFullSlt(output[31:0] sum, input[31:0] a, input[31:0] b);
-assign {sum}=a<b;
+assign {sum}=a>=b;
 endmodule
 
 //this is working
@@ -947,48 +947,45 @@ reg[31:0]     	operandA;
 reg[31:0]     	operandB;
 reg[2:0]      	command;
 wire[2:0]  	muxindex;
-wire 		invertB;
+wire 		control;
 
-wire[31:0]	addsum;
-wire[31:0]	andsum;
+
+
+wire[31:0] 	resultAND;
+wire[31:0] 	resultOR;
+wire[31:0] 	resultNAND;
+wire[31:0] 	resultNOR;
+wire[31:0] 	resultXOR;
+wire[31:0] 	resultADD;
+wire[31:0] 	resultSUB;
+wire[31:0] 	resultSLT;
 wire		carryoutB;
 wire		overflowB;
-wire		carryinB;
+wire		carryoutC;
 
 
-ALU structural(result, carryout, zero, overflow, operandA, operandB, command, muxindex, invertB);
 
-behavioralFullAdder adder0(addsum, carryoutB, operandA, operandB, 1'b0);
-//behavioralFullAdder adder1(sum1, carryout1, a1, b1, carryin1);
+ALU structural(result, carryout, zero, overflow, operandA, operandB, command, muxindex, control);
 
-//behavioralFullSubtractor subtract0(sum0, carryout0, a0, b0, carryin0);
-//behavioralFullSubtractor subtract1(sum1, carryout1, a1, b1, carryin1);
+behavioralFullAdder adder0(resultADD, carryoutB, operandA, operandB, 1'b0);
 
-behavioralFullAnd and0(andsum, operandA, operandB);
-//behavioralFullAnd and1(sum1, a1, b1);
+behavioralFullSubtractor subtract0(resultSUB, carryoutC, operandA, operandB, 1'b1);
 
-//behavioralFullOr or0(sum0, a0, b0);
-//behavioralFullOr or1(sum1, a1, b1);
-
-//behavioralFullXor xor0(sum0, a0, b0);
-//behavioralFullXor xor1(sum1, a1, b1);
-
-//behavioralFullNand nand0(sum0, a0, b0);
-//behavioralFullNand nand1(sum1, a1, b1);
-
-//behavioralFullNor nor0(sum0, a0, b0);
-//behavioralFullNor nor1(sum1, a1, b1);
-
-//behavioralFullSlt slt0(sum0, a0, b0);
-//behavioralFullSlt slt1(sum1, a1, b1);
+behavioralFullAnd andB(resultAND, operandA , operandB);
+behavioralFullOr orB(resultOR, operandA , operandB);
+behavioralFullXor xor0(resultXOR, operandA , operandB);
+behavioralFullNand nand0(resultNAND, operandA , operandB);
+behavioralFullNor nor0(resultNOR, operandA , operandB);
+behavioralFullSlt slt0(resultSLT, operandA, operandB);
 
 
-reg [31:0] test_inputsa[0:6]; //array of 32 bit bus signals, 7 elements in the array
-reg [31:0] test_inputsb[0:6]; //second array of inputs
+
+reg [31:0] test_inputsa[0:8]; //array of 32 bit bus signals, 7 elements in the array
+reg [31:0] test_inputsb[0:8]; //second array of inputs
 
 initial begin
-iterations_add = 4;
-iterations_simple = 7;
+iterations_add = 6;
+iterations_simple = 9;
 
 
 test_inputsa[0] = 'h0000000f;
@@ -997,16 +994,20 @@ test_inputsa[1] = 'hffffffff;
 test_inputsb[1] = 'hfffffff0;
 test_inputsa[2] = 'h0fffffff;
 test_inputsb[2] = 'hf0000000;
+test_inputsa[3] = 'hcffffffc;
+test_inputsb[3] = 'hcffffffc;
+test_inputsa[4] = 'hf0000000;
+test_inputsb[4] = 'hf0000000;
 
-test_inputsa[3] = 'hffffffff;
-test_inputsb[3] = 'hffffffff;
-
-test_inputsa[4] = 'h00000000;
-test_inputsb[4] = 'h00000000;
-test_inputsa[5] = 'h00000000;
+test_inputsa[5] = 'hffffffff;
 test_inputsb[5] = 'hffffffff;
-test_inputsa[6] = 'hffffffff;
+
+test_inputsa[6] = 'h00000000;
 test_inputsb[6] = 'h00000000;
+test_inputsa[7] = 'h00000000;
+test_inputsb[7] = 'hffffffff;
+test_inputsa[8] = 'hffffffff;
+test_inputsb[8] = 'h00000000;
 
 	
   //ADD LOOP has some random commented stuff
@@ -1017,13 +1018,19 @@ test_inputsb[6] = 'h00000000;
 	//a1 = test_inputsa[i+1];
 	//b1 = test_inputsb[i+1];
 	command = 3'd0;
-	#300
+	#1000
 
 	if (i == 0) begin
 		$display("this is the ADD operation");
-		$display("operandA   operandB  | muxindex  invertB | result expected  | carryout expected | overflow");
+<<<<<<< HEAD:Lab1/Structural/Final_Final.v
+		$display("operandA   operandB  | muxindex  control  zero | result expected  | carryout expected | overflow");
 	end
-	$display("%h   %h  |    %h         %h    | %h   %h  | %h %h | %h ", operandA, operandB, muxindex, invertB, result, addsum, carryout, carryoutB, overflow);
+	$display("%h   %h  |    %h         %h   %h | %h   %h  | %h %h | %h ", operandA, operandB, muxindex, control, zero, result, resultADD, carryout, carryoutB, overflow);
+=======
+		$display("operandA   operandB  | muxindex  invertB  zero | expected  actual  | carryout carryoutB | overflow");
+	end
+	$display("%h   %h  |    %h         %h       %h  | %h %h |     %h        %h     |    %h ", operandA, operandB, muxindex, invertB, zero, resultADD, result, carryout, carryoutB, overflow);
+>>>>>>> 7cff42521dce9e72a26cdfbbd05997a447bd56fb:Lab1/ALU.v
 	
   end
 
@@ -1033,12 +1040,18 @@ test_inputsb[6] = 'h00000000;
 	operandA = test_inputsa[i];
 	operandB = test_inputsb[i];
 	command = 3'd1;
-	#300
+	#1000
 	if (i == 0) begin
 		$display("this is the SUB operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+<<<<<<< HEAD:Lab1/Structural/Final_Final.v
+		$display("operandA   operandB  | muxindex  control  zero | result");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+	$display("%h   %h  |    %h         %h   %h | %h  %h  | %h %h | %h ", operandA, operandB, muxindex, control, zero, result, resultSUB, carryout, carryoutC, overflow);
+=======
+		$display("operandA   operandB  | muxindex  invertB  zero | expected  actual  | carryout carryoutC | overflow");
+	end
+	$display("%h   %h  |    %h         %h       %h  | %h %h |     %h        %h     |    %h ", operandA, operandB, muxindex, invertB, zero, resultSUB, result, carryout, carryoutC, overflow);
+>>>>>>> 7cff42521dce9e72a26cdfbbd05997a447bd56fb:Lab1/ALU.v
 	
   end
 
@@ -1049,90 +1062,126 @@ test_inputsb[6] = 'h00000000;
 	operandA = test_inputsa[i];
 	operandB = test_inputsb[i];
 	command = 3'd3;
-	#300
+	#1000
 	if (i == 0) begin
 		$display("this is the SLT operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+<<<<<<< HEAD:Lab1/Structural/Final_Final.v
+		$display("operandA   operandB  | muxindex  control  zero | result expected");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+	$display("%h   %h  |    %h         %h   %h | %h %h", operandA, operandB, muxindex, control, zero, result, resultSLT);
+=======
+		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+	end
+	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, result, resultSLT);
+>>>>>>> 7cff42521dce9e72a26cdfbbd05997a447bd56fb:Lab1/ALU.v
 	
   end
 
  //AND LOOP
-for (i = 3; i < iterations_simple; i = i + 1) begin
+for (i = 5; i < iterations_simple; i = i + 1) begin
 	
 	operandA = test_inputsa[i];
 	operandB = test_inputsb[i];
 	command = 3'd4;
 	#300
-	if (i == 3) begin
+	if (i == 5) begin
 		$display("this is the AND operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+<<<<<<< HEAD:Lab1/Structural/Final_Final.v
+		$display("operandA   operandB  | muxindex  control | result");
 	end
-	$display("%h   %h  |    %h         %h    | %h   %h ", operandA, operandB, muxindex, invertB, result, andsum);
+	$display("%h   %h  |    %h         %h   %h | %h %h", operandA, operandB, muxindex, control, zero, result, resultAND);
+=======
+		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+	end
+	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultAND, result);
+>>>>>>> 7cff42521dce9e72a26cdfbbd05997a447bd56fb:Lab1/ALU.v
 	
   end
 
 
 //OR LOOP
-for (i = 3; i < iterations_simple; i = i + 1) begin
+for (i = 5; i < iterations_simple; i = i + 1) begin
 	
 	operandA = test_inputsa[i];
 	operandB = test_inputsb[i];
 	command = 3'd7;
 	#300
-	if (i == 3) begin
+	if (i == 5) begin
 		$display("this is the OR operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+<<<<<<< HEAD:Lab1/Structural/Final_Final.v
+		$display("operandA   operandB  | muxindex  control | result");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+	$display("%h   %h  |    %h         %h   %h | %h %h", operandA, operandB, muxindex, control, zero, result, resultOR);
+=======
+		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+	end
+	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultOR, result);
+>>>>>>> 7cff42521dce9e72a26cdfbbd05997a447bd56fb:Lab1/ALU.v
 	
   end
 
 
 //NAND LOOP
-for (i = 3; i < iterations_simple; i = i + 1) begin
+for (i = 5; i < iterations_simple; i = i + 1) begin
 	
 	operandA = test_inputsa[i];
 	operandB = test_inputsb[i];
 	command = 3'd5;
 	#300
-	if (i == 3) begin
+	if (i == 5) begin
 		$display("this is the NAND operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+<<<<<<< HEAD:Lab1/Structural/Final_Final.v
+		$display("operandA   operandB  | muxindex  control | result");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+	$display("%h   %h  |    %h         %h   %h | %h %h", operandA, operandB, muxindex, control, zero, result, resultNAND);
+=======
+		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+	end
+	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultNAND, result);
+>>>>>>> 7cff42521dce9e72a26cdfbbd05997a447bd56fb:Lab1/ALU.v
 	
   end
 
 
 //NOR LOOP
-for (i = 3; i < iterations_simple; i = i + 1) begin
+for (i = 5; i < iterations_simple; i = i + 1) begin
 	operandA = test_inputsa[i];
 	operandB = test_inputsb[i];
 	command = 3'd6;
 	#300
-	if (i == 3) begin
+	if (i == 5) begin
 		$display("this is the NOR operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+<<<<<<< HEAD:Lab1/Structural/Final_Final.v
+		$display("operandA   operandB  | muxindex  control | result");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+	$display("%h   %h  |    %h         %h   %h | %h %h", operandA, operandB, muxindex, control, zero, result, resultNOR);
+=======
+		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+	end
+	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultNOR, result);
+>>>>>>> 7cff42521dce9e72a26cdfbbd05997a447bd56fb:Lab1/ALU.v
 	
   end
 
 
 //XOR LOOP
-for (i = 3; i < iterations_simple; i = i + 1) begin
+for (i = 5; i < iterations_simple; i = i + 1) begin
 	
 	operandA = test_inputsa[i];
 	operandB = test_inputsb[i];
 	command = 3'd2;
 	#300
-	if (i == 3) begin
+	if (i == 5) begin
 		$display("this is the XOR operation");
-		$display("operandA   operandB  | muxindex  invertB | result");
+<<<<<<< HEAD:Lab1/Structural/Final_Final.v
+		$display("operandA   operandB  | muxindex  control | result");
 	end
-	$display("%h   %h  |    %h         %h    | %h", operandA, operandB, muxindex, invertB, result);
+	$display("%h   %h  |    %h         %h   %h | %h %h", operandA, operandB, muxindex, control, zero, result, resultXOR);
+=======
+		$display("operandA   operandB  | muxindex  invertB  zero | expected   actual");
+	end
+	$display("%h   %h  |    %h         %h      %h   | %h  %h", operandA, operandB, muxindex, invertB, zero, resultXOR, result);
+>>>>>>> 7cff42521dce9e72a26cdfbbd05997a447bd56fb:Lab1/ALU.v
   end
 
 
