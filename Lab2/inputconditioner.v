@@ -23,8 +23,9 @@ output reg  negativeedge    // 1 clk pulse at falling edge of conditioned
     
     always @(posedge clk ) begin //whenever clock has a rising edge
 
-	//TODO - check positiveedge and negativeedge signals here. If high, set to low
-
+	positiveedge <= 0;
+	negativeedge <= 0;
+		
         if(conditioned == synchronizer1) //at start, both will be low
             counter <= 0; //assign counter to 0 at the end of the time cycle
         else begin //if the conditioned is different from synch1
@@ -32,10 +33,12 @@ output reg  negativeedge    // 1 clk pulse at falling edge of conditioned
             if( counter == waittime) begin //if counter =3, we've waited enough cycles
                 counter <= 0; //set counter to 0 at end of time cycle
                 conditioned <= synchronizer1; // set output to synchronizer 1
-		//if synch1 == 1
-			//set risingedge high
-		//else if synch1 == 0
-			//set fallingedge high
+		if(synchronizer1 == 1) begin
+			positiveedge <= 1;
+		end
+		else if(synchronizer1 == 0) begin
+			negativeedge <= 1;
+		end
             end
             else //if we're not done counting yet, increase counter
                 counter <= counter+1; 
