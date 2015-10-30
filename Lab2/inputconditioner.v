@@ -14,25 +14,34 @@ output reg  positiveedge,   // 1 clk pulse at rising edge of conditioned
 output reg  negativeedge    // 1 clk pulse at falling edge of conditioned
 );
 
-    parameter counterwidth = 3; // Counter size, in bits, >= log2(waittime)
+    parameter counterwidth = 3; // Counter size, in bits, >= log2(waittime) used to count clock cycles of debounce period
     parameter waittime = 3;     // Debounce delay, in clock cycles
     
-    reg[counterwidth-1:0] counter = 0;
+    reg[counterwidth-1:0] counter = 0; //3 bit bus
     reg synchronizer0 = 0;
     reg synchronizer1 = 0;
     
-    always @(posedge clk ) begin
-        if(conditioned == synchronizer1)
-            counter <= 0;
-        else begin
-            if( counter == waittime) begin
-                counter <= 0;
-                conditioned <= synchronizer1;
+    always @(posedge clk ) begin //whenever clock has a rising edge
+
+	//TODO - check positiveedge and negativeedge signals here. If high, set to low
+
+        if(conditioned == synchronizer1) //at start, both will be low
+            counter <= 0; //assign counter to 0 at the end of the time cycle
+        else begin //if the conditioned is different from synch1
+	
+            if( counter == waittime) begin //if counter =3, we've waited enough cycles
+                counter <= 0; //set counter to 0 at end of time cycle
+                conditioned <= synchronizer1; // set output to synchronizer 1
+		//if synch1 == 1
+			//set risingedge high
+		//else if synch1 == 0
+			//set fallingedge high
             end
-            else 
-                counter <= counter+1;
+            else //if we're not done counting yet, increase counter
+                counter <= counter+1; 
         end
-        synchronizer0 <= noisysignal;
-        synchronizer1 <= synchronizer0;
+	//is there a cycle delay here?
+        synchronizer0 <= noisysignal; //when input goes high, set synch0 to high
+        synchronizer1 <= synchronizer0; //set synchronizer1 to synchronizer0
     end
 endmodule
