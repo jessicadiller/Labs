@@ -9,12 +9,52 @@ module testConditioner();
     wire conditioned;
     wire rising;
     wire falling;
+    reg begintest;
+    reg endtest;
+    wire dutpassed;
     
     inputconditioner dut(.clk(clk),
     			 .noisysignal(pin),
 			 .conditioned(conditioned),
 			 .positiveedge(rising),
-			 .negativeedge(falling))
+			 .negativeedge(falling)
+    );
+
+    inputconditionerTestBench tester(
+	.begintest(begintest)
+	.endtest(endtest)
+	.dutpassed(dutpassed)
+	.clk(clk) 
+	.ReadNoisy(readnoisy)
+	.WriteConditioned(writeconditioned)
+	.WritePosEdge(writeposedge)
+	.WriteNegEdge(writenegedge)
+	);
+
+
+initial begin 
+	begintest = 0;
+	#10;
+	begintest = 1;
+	#1000;
+end
+
+always @(posedge endtest) begin
+	$display("DUT passed?: %b", dutpassed);
+end
+
+endmodule
+
+module inputconditionerTestBench(
+		input begintest,
+		output reg endtest,
+		output reg dutpassed,
+		output reg clk,
+		input readnoisy,
+		output reg writeconditioned,
+		output reg writeposedge,
+		output reg writenegedge
+	);
 
 
     // Generate clock (50MHz)
@@ -27,13 +67,22 @@ module testConditioner();
     // Synchronize, Clean, Preprocess (edge finding)
    // if counter == 0,1,or2 
 	// if pin == 1
-		//conditioned == previous
+		//conditioned = previous
 		// rising = 0
 		// falling = 0
 	//if pin == 0
-		//condition = pre
-   // if counter
-
+		//conditioned = previous
+	 	// rising = 0
+		// falling = 0
+   // if counter == 3
+	//if pin == 1
+		//conditioned = 1
+		//rising = 1
+		//falling = 0
+	//if pin == 0 
+		//conditioned = 0
+		//rising = 0
+		//falling = 1
   // Example test case
   //   Write '15' to register 2, verify with Read Ports 1 and 2
   //   (Fails with example register file, but should pass with yours)
@@ -48,6 +97,5 @@ module testConditioner();
     dutpassed = 0;
     $display("Test Case 2 Failed");
   end
-
 
 endmodule
