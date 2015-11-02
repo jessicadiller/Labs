@@ -21,13 +21,13 @@ module testConditioner();
     );
 
     inputconditionerTestBench tester(
-	.begintest(begintest)
-	.endtest(endtest)
-	.dutpassed(dutpassed)
-	.clk(clk) 
-	.WriteNoisy(writenoisy)
-	.ReadConditioned(readconditioned)
-	.ReadPosEdge(readposedge)
+	.begintest(begintest),
+	.endtest(endtest),
+	.dutpassed(dutpassed),
+	.clk(clk) ,
+	.WriteNoisy(writenoisy),
+	.ReadConditioned(readconditioned),
+	.ReadPosEdge(readposedge),
 	.ReadNegEdge(readnegedge)
 	);
 
@@ -69,15 +69,27 @@ module inputconditionerTestBench(
 //Test Case 1
 //Input a blip of 1 clock cycle
 
-writenoisy = 1
+writenoisy = 1;
 #20
-writenoisy = 0
+writenoisy = 0;
 
   // Verify expectations and report test result
 if((readconditioned != 0) || (readposedge != 0) || (readnegedge != 0)) begin
     dutpassed = 0;	// Set to 'false' on failure
-    $display("Test Case 1 Failed");
+    $display("Short blip not working");
   end
+
+#20
+writenoisy = 1;
+#20
+
+if((readconditioned != 0) || (readposedge != 0) || (readnegedge != 0)) begin
+    dutpassed = 0;	// Set to 'false' on failure
+    $display("Short blip not working");
+  end
+
+
+
 	
     // Your Test Code
     // Be sure to test each of the three conditioner functions:
