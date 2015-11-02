@@ -1,4 +1,4 @@
-//--------------------------------------------------------------------------------
+//-//--------------------------------------------------------------------------------
 //  Wrapper for Lab 0: Full Adder
 // 
 //  Rationale: 
@@ -99,19 +99,18 @@ module lab0_wrapper
     output [3:0] led
 );
 
-    wire [7:0] noisysignal;       // Stored inputs to adder
-    wire [2:0] conditioned;
-    wire [2:0] positiveedge
-    wire [2:0] negativeedge;     // Output display options
+    wire[7:0] noisysignal;       // Stored inputs to adder
+    wire[2:0] conditioned;
+    wire[2:0] positiveedge;
+    wire[2:0] negativeedge;     // Output display options
     wire res_sel;             // Select between display options
     wire peripheralClkEdge;
     wire clkEdge;
     wire parallelLoad;
     wire serialDataIn;
     wire serialDataOut;
-    wire parallelDataIn;
-    
-    parallelIn = 8'ha5;
+    reg[7:0] parallelDataIn;
+    wire[7:0] parallelDataOut;
     
 /*    // Memory for stored operands (parametric width set to 4 bits)
     dff #(4) opA_mem(.trigger(clk), .enable(btn[0]), .d(sw), .q(opA));
@@ -122,7 +121,7 @@ module lab0_wrapper
     inputconditioner conditioner0(.clk(clk), .noisysignal(btn[0]), .conditioned(conditioned[0]), .positiveedge(positiveedge[0]), .negativeedge(negativeedge[0]));
     inputconditioner conditioner1(.clk(clk), .noisysignal(sw[0]), .conditioned(conditioned[1]), .positiveedge(positiveedge[1]), .negativeedge(negativeedge[1]));
     inputconditioner conditioner2(.clk(clk), .noisysignal(sw[1]), .conditioned(conditioned[2]), .positiveedge(positiveedge[2]), .negativeedge(negativeedge[2]));
-    shiftregister shiftregister0(.clk(clk), .peripheralClkEdge(positiveedge[2]), .parallelLoad(negativeedge[0]), .parallelDataIn(parallelDataIn), .serialDataIn(conditioned[1]), .parallelDataOut(parallelDataOut), .serialDataOut(serialDataOut))
+    shiftregister shiftregister0(.clk(clk), .peripheralClkEdge(positiveedge[2]), .parallelLoad(negativeedge[0]), .parallelDataIn(8'ha5), .serialDataIn(conditioned[1]), .parallelDataOut(parallelDataOut), .serialDataOut(serialDataOut));
 
     mux2 #(4) output_select(.in0(parallelDataOut[3:0]), .in1(parallelDataOut[7:4]), .sel(res_sel), .out(led));
     // Capture button input to switch which MUX input to LEDs
