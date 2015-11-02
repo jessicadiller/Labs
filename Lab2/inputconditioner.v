@@ -46,7 +46,7 @@ output reg  negativeedge    // 1 clk pulse at falling edge of conditioned
 	    end
         end
 	//is there a cycle delay here?
-        synchronizer0 <= noisysignal; //when input goes high, set synch0 to high
+        synchronizer0 = noisysignal; //when input goes high, set synch0 to high
         synchronizer1 <= synchronizer0; //set synchronizer1 to synchronizer0
     end
 endmodule

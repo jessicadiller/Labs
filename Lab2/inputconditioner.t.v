@@ -87,72 +87,55 @@ always @(posedge begintest) begin
 	//Test Case 1
 	//upward for 3 clock cycles
 	noisysignal = 1;
-	#120
+	#110
 	// Verify expectations and report test result
 	if((conditioned != 1) || (positiveedge != 1) || (negativeedge != 0)) begin
     	    dutpassed = 0;	// Set to 'false' on failure
     	    $display("Upward move with posedge not working");
 	end
 	//Test Case 2
+	//upward move with pos edge rising
+	#20
+	if((conditioned != 1) || (positiveedge != 0) || (negativeedge != 0)) begin
+    	    dutpassed = 0;	// Set to 'false' on failure
+    	    $display("Upward move after posedge not working");
+	end
+	//Test Case 3
 	//downward blip
+	#30
 	noisysignal = 0;
 	#20
 	noisysignal = 1;
 	#20
-//	if((conditioned != 0) || (positiveedge != 0) || (negativeedge != 0)) begin
-//    	    dutpassed = 0;	// Set to 'false' on failure
-//    	    $display("Upward move not working");
-//	end
+	//Verify expectations and report test results
+	if((conditioned != 1) || (positiveedge != 0) || (negativeedge != 0)) begin
+    	    dutpassed = 0;	// Set to 'false' on failure
+    	    $display("downward blip not working");
+	end
+	//Test Case 4
+	//downward move
 	noisysignal = 0;
 	#55
+	//Test Case 5
+	//downward blip but not on clock rising edge
 	noisysignal = 1;
 	#5
 	noisysignal = 0;
-	#30
-
-
-if((readconditioned != 0) || (readposedge != 0) || (readnegedge != 0)) begin
-    dutpassed = 0;	// Set to 'false' on failure
-    $display("Short blip not working");
-  end
-
-
-
+	#50
+	//Verify expectations and report test results
+	if((conditioned != 0) || (positiveedge != 0) || (negativeedge != 1)) begin
+    	    dutpassed = 0;	// Set to 'false' on failure
+    	    $display("downward move or tiny blip not working");
+	end
+	//Test Case 6
+	//upward move with neg edge falling
+	#20
+	//Verify expectations and report test results
+	if((conditioned != 0) || (positiveedge != 0) || (negativeedge != 0)) begin
+    	    dutpassed = 0;	// Set to 'false' on failure
+    	    $display("downward move after posedge not working");
+	end
 	
-    // Your Test Code
-    // Be sure to test each of the three conditioner functions:
-    // Synchronize, Clean, Preprocess (edge finding)
-   // if counter == 0,1,or2 
-	// if pin == 1
-		//conditioned = previous
-		// rising = 0
-		// falling = 0
-	//if pin == 0
-		//conditioned = previous
-	 	// rising = 0
-		// falling = 0
-   // if counter == 3
-	//if pin == 1
-		//conditioned = 1
-		//rising = 1
-		//falling = 0
-	//if pin == 0 
-		//conditioned = 0
-		//rising = 0
-		//falling = 1
-  // Example test case
-  //   Write '15' to register 2, verify with Read Ports 1 and 2
-  //   (Fails with example register file, but should pass with yours)
-  // WriteRegister = 5'd2;
-  // WriteData = 32'd15;
-  // RegWrite = 1;
-  // ReadRegister1 = 5'd2;
-  // ReadRegister2 = 5'd2;
-  // #5 Clk=1; #5 Clk=0; //Use this to force more than 1 clock cycle!
-  // if((ReadData1 != 15) || (ReadData2 != 15)) begin
-  //   dutpassed = 0;
-  //   $display("Test Case 2 Failed");
-
-	endtest = 1;
+   	endtest = 1;
 	end
 endmodule

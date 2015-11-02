@@ -10,6 +10,6 @@ sim:/testConditioner/falling \
 sim:/testConditioner/begintest \
 sim:/testConditioner/endtest \
 sim:/testConditioner/dutpassed
-run 1000
+run 550
 
 wave zoom full
