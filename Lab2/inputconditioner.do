@@ -1,5 +1,5 @@
-vlog -reportprogress 300 -work work inputconditioner.v
-vsim -voptargs="+acc" inputconditioner
+vlog -reportprogress 300 -work work inputconditioner.t.v 
+vsim -voptargs="+acc" inputconditionerTestBench
 
 add wave -position insertpoint \
 sim:/inputconditioner/clk \
