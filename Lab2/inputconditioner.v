@@ -26,8 +26,9 @@ output reg  negativeedge    // 1 clk pulse at falling edge of conditioned
 	positiveedge <= 0;
 	negativeedge <= 0;
 		
-        if(conditioned == synchronizer1) //at start, both will be low
+        if(conditioned == synchronizer1) begin //at start, both will be low
             counter <= 0; //assign counter to 0 at the end of the time cycle
+	end
         else begin //if the conditioned is different from synch1
 	
             if( counter == waittime) begin //if counter =3, we've waited enough cycles
@@ -40,8 +41,9 @@ output reg  negativeedge    // 1 clk pulse at falling edge of conditioned
 			negativeedge <= 1;
 		end
             end
-            else //if we're not done counting yet, increase counter
+            else begin//if we're not done counting yet, increase counter
                 counter <= counter+1; 
+	    end
         end
 	//is there a cycle delay here?
         synchronizer0 <= noisysignal; //when input goes high, set synch0 to high

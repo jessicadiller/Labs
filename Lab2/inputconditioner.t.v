@@ -4,14 +4,17 @@
 
 module testConditioner();
 
-    reg clk;
-    reg pin;
+    wire clk;
+    wire pin;
     wire conditioned;
     wire rising;
     wire falling;
     reg begintest;
-    reg endtest;
+    wire endtest;
     wire dutpassed;
+    wire positiveedge;
+    wire negativeedge;
+    wire noisysignal;
     
     inputconditioner dut(.clk(clk),
     			 .noisysignal(pin),
@@ -25,10 +28,10 @@ module testConditioner();
 	.endtest(endtest),
 	.dutpassed(dutpassed),
 	.clk(clk) ,
-	.WriteNoisy(writenoisy),
-	.ReadConditioned(readconditioned),
-	.ReadPosEdge(readposedge),
-	.ReadNegEdge(readnegedge)
+	.noisysignal(pin),
+	.conditioned(conditioned),
+	.positiveedge(rising),
+	.negativeedge(falling)
 	);
 
 
@@ -51,37 +54,62 @@ module inputconditionerTestBench(
 		output reg dutpassed,
 
 		output reg clk,
-		output reg writenoisy,
-		input readconditioned,
-		input readposedge,
-		input readnegedge
+		output reg noisysignal,
+		input conditioned,
+		input positiveedge,
+		input negativeedge
 	);
 
-
-    // Generate clock (50MHz)
-    initial clk=0;
-    always #10 clk=!clk;    // 50MHz Clock
     
-    initial begin
-	writenoisy=0;
-	clk = 0;
+// Generate clock (50MHz)
+initial clk=0;
+always #10 clk=!clk;    // 50MHz Clock
 
-//Test Case 1
-//Input a blip of 1 clock cycle
 
-writenoisy = 1;
-#20
-writenoisy = 0;
+always @(posedge begintest) begin
+	endtest = 0;
+	dutpassed =1;
+	#10
+	noisysignal=0;
+	#40
 
-  // Verify expectations and report test result
-if((readconditioned != 0) || (readposedge != 0) || (readnegedge != 0)) begin
-    dutpassed = 0;	// Set to 'false' on failure
-    $display("Short blip not working");
-  end
+	//Test Case 0
+	//Input a up blip of 2 clock cycles
+	noisysignal = 1;
+	#40
+	// Verify expectations and report test result
+	if((conditioned != 0) || (positiveedge != 0) || (negativeedge != 0)) begin
+    	    dutpassed = 0;	// Set to 'false' on failure
+    	    $display("Short blip not working");
+  	end
+	noisysignal = 0;
+	#80
+	//Test Case 1
+	//upward for 3 clock cycles
+	noisysignal = 1;
+	#120
+	// Verify expectations and report test result
+	if((conditioned != 1) || (positiveedge != 1) || (negativeedge != 0)) begin
+    	    dutpassed = 0;	// Set to 'false' on failure
+    	    $display("Upward move with posedge not working");
+	end
+	//Test Case 2
+	//downward blip
+	noisysignal = 0;
+	#20
+	noisysignal = 1;
+	#20
+//	if((conditioned != 0) || (positiveedge != 0) || (negativeedge != 0)) begin
+//    	    dutpassed = 0;	// Set to 'false' on failure
+//    	    $display("Upward move not working");
+//	end
+	noisysignal = 0;
+	#55
+	noisysignal = 1;
+	#5
+	noisysignal = 0;
+	#30
 
-#20
-writenoisy = 1;
-#20
 
 if((readconditioned != 0) || (readposedge != 0) || (readnegedge != 0)) begin
     dutpassed = 0;	// Set to 'false' on failure
@@ -121,10 +149,10 @@ if((readconditioned != 0) || (readposedge != 0) || (readnegedge != 0)) begin
   // ReadRegister1 = 5'd2;
   // ReadRegister2 = 5'd2;
   // #5 Clk=1; #5 Clk=0; //Use this to force more than 1 clock cycle!
-
   // if((ReadData1 != 15) || (ReadData2 != 15)) begin
   //   dutpassed = 0;
   //   $display("Test Case 2 Failed");
-  end
 
+	endtest = 1;
+	end
 endmodule
