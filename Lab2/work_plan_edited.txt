@@ -1,20 +1,20 @@
 WORK PLAN
 Jessica Diller, Griffin Tschurwald, and Marie-Caroline Finke
 
-Make work plan - 1 hour - October 26th
+Make work plan - 1 hour - October 26th - 1 hour - October 26
 
 Input Conditioner - 45 minutes - October 30th - 1 hour - October 30th
 test bench for input conditioner - 45 minutes - October 30th
 circuit diagram - 30 minutes - October 30th
 clock timing analysis - 30 minutes - October 30th
 
-create shift register - 1 hour - October 31st
-shift register test bench - 30 minutes - October 31st
-description of test bench strategy - 30 minutes - October 31st
+create shift register - 1 hour - October 31 - ?? - November 1
+shift register test bench - 30 minutes - October 31 - ?? - November 1
+description of test bench strategy - 30 minutes - October 31
 
-create top level module and load onto FPGA - 1 hour - November 1st 
-design, implement, and write up test sequence - 1 hour - November 1st 
-show NINJA test execution - 15 minutes - November 1st 
+create top level module and load onto FPGA - 1 hour - November 1 - 1 hour - November 1
+design, implement, and write up test sequence - 1 hour - November 1 - 1 hour - November 1 
+show NINJA test execution - 15 minutes - November 1st - 15 min - November 2
 
 implement SPI memory - 5 hours - November 4th
 choose test sequences - 30 minutes - November 6th
