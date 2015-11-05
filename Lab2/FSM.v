@@ -21,9 +21,10 @@ module FSM
     parameter state_WRITE_1		= 3'd5;
     parameter state_WRITE_2		= 3'd6;
     parameter state_DONE		= 3'd7;
+    parameter statewidth = 8;
     //keeping track of states
-    reg [7:0] currentState;
-    reg [7:0] nextState;
+    reg [statewidth-1:0] currentState;
+    reg [statewidth-1:0] nextState;
 
 //OPTION ONE INCLUDE CLK AND SCLK	
 //  always @(posedge clk) begin
@@ -49,7 +50,7 @@ module FSM
 	case(currentState)
 		    state_GETTING_ADDRESS: begin
 			counter <= counter+1;
-			if (counter == 7) begin
+			if (counter == counterwidth) begin
 				nextState <= state_GOT_ADDRESS;
 				counter <= 0;
 				addressLatch_WE <= 1;
@@ -75,14 +76,14 @@ module FSM
 		    end
 		    state_READ_3: begin
 			counter <= counter+1;
-			if (counter == 7) begin
+			if (counter == counterwidth) begin
 				counter <= 0;
 				nextState <= state_DONE;
 			end
 		    end
 		    state_WRITE_1: begin
 			counter <= counter+1;
-			if (counter == 7) begin
+			if (counter == counterwidth) begin
 				addressLatch_WE <= 0;
 				dataMem_WE <= 1;
 				nextState <= state_WRITE_2;
