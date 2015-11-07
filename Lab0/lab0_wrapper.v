@@ -94,8 +94,8 @@ endmodule
 module lab0_wrapper
 (
     input        clk,
-    input  [3:0] sw,
-    input  [3:0] btn,
+    input  [1:0] sw,
+    input        btn,
     output [3:0] led
 );
 
@@ -115,6 +115,10 @@ module lab0_wrapper
     
     // TODO: You write this in your adder.v
     FullAdder4bit adder(.sum(res0), .carryout(cout), .overflow(ovf), .a(opA), .b(opB));
+    inputconditioner conditioner0(.clk(clk), .noisysignal(pin0), .conditioned(conditioned0), .positiveedge(positiveedge0), .negativeedge(negativeedge0));
+    inputconditioner conditioner1(.clk(clk), .noisysignal(pin1), .conditioned(conditioned1), .positiveedge(positiveedge1), .negativeedge(negativeedge1));
+    inputconditioner conditioner2(.clk(clk), .noisysignal(pin2), .conditioned(conditioned2), .positiveedge(positiveedge2), .negativeedge(negativeedge2));
+    shiftregister shiftregister0(.clk(clk), .peripheralClkEdge(ClkEdge), .parallelLoad(parallelLoad), .parallelData(parallelData), .serialDataIn(serialDataIn), .serialDataOut(serialDataOut), .parallelDataOut(parallelDataOut), .serialDataOut(serialDataOut))
 
     // Assign bits of second display output to show carry out and overflow
     assign res1[0] = cout;
