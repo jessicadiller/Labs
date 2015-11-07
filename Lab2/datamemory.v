@@ -12,7 +12,7 @@ module datamemory
     parameter width         = 8
 )
 (
-    input 		                clk,
+    input 		        clk,
     output reg [width-1:0]      dataOut,
     input [addresswidth-1:0]    address,
     input                       writeEnable,
@@ -23,8 +23,9 @@ module datamemory
     reg [width-1:0] memory [depth-1:0];
 
     always @(posedge clk) begin
-        if(writeEnable)
+        if(writeEnable) begin
             memory[address] <= dataIn;
+	end
         dataOut <= memory[address];
     end
 
