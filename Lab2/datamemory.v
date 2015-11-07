@@ -25,6 +25,7 @@ module datamemory
     always @(posedge clk) begin
         if(writeEnable)
             memory[address] <= dataIn;
+	end
         dataOut <= memory[address];
     end
 
