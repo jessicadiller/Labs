@@ -1,8 +1,8 @@
 module FSM
-(input RorW
+( input clk
+ input RorW
  input CSReset
  input SCLK
- input clk
  output reg addressLatch_WE
  output reg shiftReg_WE
  output reg MISO_enable
