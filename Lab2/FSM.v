@@ -2,6 +2,7 @@ module FSM
 (input RorW
  input CSReset
  input SCLK
+ input clk
  output reg addressLatch_WE
  output reg shiftReg_WE
  output reg MISO_enable
@@ -27,28 +28,27 @@ module FSM
     reg [statewidth-1:0] nextState;
 
 //OPTION ONE INCLUDE CLK AND SCLK	
-//  always @(posedge clk) begin
-//	if (CSReset == 1) begin
-//		currentState <= state_GETTING_ADDRESS;
-//	end
-//	else begin
-//		currentState <= nextState;
-//	end
-//  end
-//  always @( SCLK == 1 ) begin 	whenever SCLK is true this loop goes
-//ADDITIONALLY: you'd take out the CSRest if and elses down below
-
-//OPTION TWO ONLY INCLUDE SCLK - SEEN BELOW
-    always @(posedge SCLK) begin //whenever SClk has a rising edge
-        if (CSreset == 0) begin 
+  always @(posedge clk) begin
+	if (CSReset == 1) begin
 		counter <= 0;
-		currentState <= state_GETTING_ADDRESS
+		currentState <= state_GETTING_ADDRESS;
 	end
 	else begin
-		currentState <= nextState
+		currentState <= nextState;
 	end
+  end
+  always @(posedge SCLK) begin 	//whenever SCLK has a risign edge this loop starts
+//ADDITIONALLY: you'd take out the CSRest if and elses down below
+//OPTION TWO ONLY INCLUDE SCLK - SEEN BELOW
+//    always @(posedge SCLK) begin //whenever SClk has a rising edge
+//        if (CSreset == 0) begin 
+//		counter <= 0;
+//		currentState <= state_GETTING_ADDRESS
+//	end
+//	else begin
+//		currentState <= nextState
 	case(currentState)
-		    state_GETTING_ADDRESS: begin
+		state_GETTING_ADDRESS: begin
 			counter <= counter+1;
 			if (counter == counterwidth) begin
 				nextState <= state_GOT_ADDRESS;
@@ -97,5 +97,5 @@ module FSM
 			nextState <= state_GETTING_ADDRESS;
 		    end		
 	endcase
-
+//	end
 endmodule
