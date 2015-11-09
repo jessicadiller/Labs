@@ -46,39 +46,22 @@
 // 
 // DO NOT MODIFY THIS FILE.
 
-
 // IP VLNV: olin.edu:user:spiMemory:1.0
 // IP Revision: 2
 
-(* X_CORE_INFO = "spiMemory,Vivado 2015.2" *)
-(* CHECK_LICENSE_TYPE = "design_1_spiMemory_0_0,spiMemory,{}" *)
-(* DowngradeIPIdentifiedWarnings = "yes" *)
-module design_1_spiMemory_0_0 (
-  clk,
-  sclk_pin,
-  cs_pin,
-  miso_pin,
-  mosi_pin,
-  fault_pin,
-  leds
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+
+//----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
+design_1_spiMemory_0_1 your_instance_name (
+  .clk(clk),              // input wire clk
+  .sclk_pin(sclk_pin),    // input wire sclk_pin
+  .cs_pin(cs_pin),        // input wire cs_pin
+  .miso_pin(miso_pin),    // output wire miso_pin
+  .mosi_pin(mosi_pin),    // input wire mosi_pin
+  .fault_pin(fault_pin),  // input wire fault_pin
+  .leds(leds)            // output wire [3 : 0] leds
 );
+// INST_TAG_END ------ End INSTANTIATION Template ---------
 
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
-input wire clk;
-input wire sclk_pin;
-input wire cs_pin;
-output wire miso_pin;
-input wire mosi_pin;
-input wire fault_pin;
-output wire [3 : 0] leds;
-
-  spiMemory inst (
-    .clk(clk),
-    .sclk_pin(sclk_pin),
-    .cs_pin(cs_pin),
-    .miso_pin(miso_pin),
-    .mosi_pin(mosi_pin),
-    .fault_pin(fault_pin),
-    .leds(leds)
-  );
-endmodule

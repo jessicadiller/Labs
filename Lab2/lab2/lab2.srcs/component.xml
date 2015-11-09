@@ -35,7 +35,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ca4805c1</spirit:value>
+            <spirit:value>437b2705</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -50,7 +50,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d766a730</spirit:value>
+            <spirit:value>50701cac</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -189,15 +189,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>sources_1/imports/Lab2/FSM.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>sources_1/imports/Lab2/shiftregister.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>sources_1/imports/Lab2/addressLatch.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/imports/Lab2/FSM.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -221,15 +221,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>sources_1/imports/Lab2/FSM.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>sources_1/imports/Lab2/shiftregister.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>sources_1/imports/Lab2/addressLatch.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/imports/Lab2/FSM.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -264,7 +264,7 @@
       </xilinx:taxonomies>
       <xilinx:displayName>spiMemory_v1_0</xilinx:displayName>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2015-11-09T06:23:44Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2015-11-09T07:19:27Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="olin.edu:user:spiMemory:1.0_ARCHIVE_LOCATION">C:/Users/jdiller/Documents/Labs/Lab2/lab2/lab2.srcs</xilinx:tag>
       </xilinx:tags>
@@ -272,7 +272,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2015.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c625c33c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4ad05b0c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="d8224d33"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="ab99d2f2"/>
     </xilinx:packagingInfo>

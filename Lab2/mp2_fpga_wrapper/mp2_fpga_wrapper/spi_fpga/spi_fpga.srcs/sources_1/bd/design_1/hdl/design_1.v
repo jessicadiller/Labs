@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-//Date        : Mon Nov 09 01:43:05 2015
+//Date        : Mon Nov 09 02:24:28 2015
 //Host        : 9VT1W32 running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -373,7 +373,7 @@ module design_1
         .mb_debug_sys_rst(GND_1),
         .peripheral_aresetn(rst_processing_system7_0_100M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
-  design_1_spiMemory_0_0 spiMemory_0
+  design_1_spiMemory_0_1 spiMemory_0
        (.clk(processing_system7_0_FCLK_CLK0),
         .cs_pin(axi_quad_spi_0_ss_o),
         .fault_pin(sw0_1),

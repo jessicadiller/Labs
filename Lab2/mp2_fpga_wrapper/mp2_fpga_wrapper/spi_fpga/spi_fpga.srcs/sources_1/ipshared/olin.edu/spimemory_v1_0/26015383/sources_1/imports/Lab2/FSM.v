@@ -1,8 +1,9 @@
-module FSM_breakable
+module FSM
 ( input clk,
  input RorW,
  input CSReset,
  input SCLK,
+ input fault_pin,
  output reg addressLatch_WE,
  output reg shiftReg_WE,
  output reg MISO_enable,
@@ -29,7 +30,18 @@ module FSM_breakable
 
 //OPTION ONE INCLUDE CLK AND SCLK	
   always @(posedge clk) begin
-	currentState <= nextState;
+	if (CSReset == 1) begin
+		if (fault_pin == 1) begin
+			currentState <= nextState;
+		end
+		else begin
+			counter <= 0;
+			currentState <= state_GETTING_ADDRESS;
+		end
+	end
+	else begin
+		currentState <= nextState;
+	end
   end
   always @(posedge SCLK) begin 	//whenever SCLK has a risign edge this loop starts
 //ADDITIONALLY: you'd take out the CSRest if and elses down below
@@ -91,5 +103,5 @@ module FSM_breakable
 			nextState <= state_GETTING_ADDRESS;
 		    end		
 	endcase
-	end
+end
 endmodule

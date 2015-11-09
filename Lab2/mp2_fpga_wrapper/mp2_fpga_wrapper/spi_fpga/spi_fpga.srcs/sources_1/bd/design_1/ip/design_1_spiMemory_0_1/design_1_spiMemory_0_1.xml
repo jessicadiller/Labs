@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>olin.edu</spirit:vendor>
   <spirit:library>customized_ip</spirit:library>
-  <spirit:name>design_1_spiMemory_0_0</spirit:name>
+  <spirit:name>design_1_spiMemory_0_1</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
@@ -61,7 +61,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Nov 09 06:43:15 UTC 2015</spirit:value>
+            <spirit:value>Mon Nov 09 07:24:31 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -95,7 +95,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Nov 09 06:43:15 UTC 2015</spirit:value>
+            <spirit:value>Mon Nov 09 07:24:32 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -130,7 +130,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Nov 09 06:43:15 UTC 2015</spirit:value>
+            <spirit:value>Mon Nov 09 07:24:32 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -164,7 +164,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Nov 09 06:43:15 UTC 2015</spirit:value>
+            <spirit:value>Mon Nov 09 07:24:32 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -199,7 +199,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Nov 09 06:43:15 UTC 2015</spirit:value>
+            <spirit:value>Mon Nov 09 07:24:32 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -317,51 +317,51 @@
     <spirit:fileSet>
       <spirit:name>xilinx_veriloginstantiationtemplate_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>design_1_spiMemory_0_0.veo</spirit:name>
+        <spirit:name>design_1_spiMemory_0_1.veo</spirit:name>
         <spirit:userFileType>verilogTemplate</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/constrs_1/imports/poe/ZYBO_Master.xdc</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/constrs_1/imports/poe/ZYBO_Master.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
         <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/datamemory.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/datamemory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/inputconditioner.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/inputconditioner.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/misodff.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/misodff.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/FSM.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/shiftregister.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/shiftregister.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/addressLatch.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/addressLatch.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/FSM.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/spimemory.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/spimemory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>synth/design_1_spiMemory_0_0.v</spirit:name>
+        <spirit:name>synth/design_1_spiMemory_0_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
@@ -369,38 +369,38 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/datamemory.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/datamemory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/inputconditioner.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/inputconditioner.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/misodff.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/misodff.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/FSM.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/shiftregister.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/shiftregister.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/addressLatch.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/addressLatch.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/FSM.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/25925dc5/sources_1/imports/Lab2/spimemory.v</spirit:name>
+        <spirit:name>../../../../ipshared/olin.edu/spimemory_v1_0/26015383/sources_1/imports/Lab2/spimemory.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>sim/design_1_spiMemory_0_0.v</spirit:name>
+        <spirit:name>sim/design_1_spiMemory_0_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
@@ -410,7 +410,7 @@
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_spiMemory_0_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_spiMemory_0_1</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -423,7 +423,7 @@
       </xilinx:taxonomies>
       <xilinx:displayName>spiMemory_v1_0</xilinx:displayName>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2015-11-09T06:23:44Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2015-11-09T07:19:27Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="olin.edu:user:spiMemory:1.0_ARCHIVE_LOCATION">C:/Users/jdiller/Documents/Labs/Lab2/lab2/lab2.srcs</xilinx:tag>
       </xilinx:tags>
@@ -435,7 +435,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2015.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c625c33c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4ad05b0c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="d8224d33"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="ab99d2f2"/>
     </xilinx:packagingInfo>

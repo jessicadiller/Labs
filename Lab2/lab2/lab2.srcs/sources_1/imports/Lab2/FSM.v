@@ -31,7 +31,10 @@ module FSM
 //OPTION ONE INCLUDE CLK AND SCLK	
   always @(posedge clk) begin
 	if (CSReset == 1) begin
-		if (fault_pin == 0) begin
+		if (fault_pin == 1) begin
+			currentState <= nextState;
+		end
+		else begin
 			counter <= 0;
 			currentState <= state_GETTING_ADDRESS;
 		end

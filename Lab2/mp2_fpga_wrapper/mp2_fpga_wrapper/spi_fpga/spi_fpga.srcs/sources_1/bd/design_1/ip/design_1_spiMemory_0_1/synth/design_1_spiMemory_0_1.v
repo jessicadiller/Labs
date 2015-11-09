@@ -50,10 +50,10 @@
 // IP VLNV: olin.edu:user:spiMemory:1.0
 // IP Revision: 2
 
-`timescale 1ns/1ps
-
+(* X_CORE_INFO = "spiMemory,Vivado 2015.2" *)
+(* CHECK_LICENSE_TYPE = "design_1_spiMemory_0_1,spiMemory,{}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
-module design_1_spiMemory_0_0 (
+module design_1_spiMemory_0_1 (
   clk,
   sclk_pin,
   cs_pin,

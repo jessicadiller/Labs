@@ -261,7 +261,7 @@
         <spirit:instanceName>spiMemory_0</spirit:instanceName>
         <spirit:componentRef spirit:library="user" spirit:name="spiMemory" spirit:vendor="olin.edu" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_spiMemory_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_spiMemory_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -317,6 +317,11 @@
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
+        <spirit:name>sw0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="sw0"/>
+        <spirit:internalPortReference spirit:componentRef="spiMemory_0" spirit:portRef="fault_pin"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
         <spirit:name>axi_quad_spi_0_io0_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_quad_spi_0" spirit:portRef="io0_o"/>
         <spirit:internalPortReference spirit:componentRef="spiMemory_0" spirit:portRef="mosi_pin"/>
@@ -335,11 +340,6 @@
         <spirit:name>axi_quad_spi_0_ss_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_quad_spi_0" spirit:portRef="ss_o"/>
         <spirit:internalPortReference spirit:componentRef="spiMemory_0" spirit:portRef="cs_pin"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>sw0_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="sw0"/>
-        <spirit:internalPortReference spirit:componentRef="spiMemory_0" spirit:portRef="fault_pin"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>

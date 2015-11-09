@@ -46,15 +46,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Lab2/FSM.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../FSM.v"/>
-          <Attr Name="ImportTime" Val="1447042164"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/Lab2/shiftregister.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../shiftregister.v"/>
@@ -68,6 +59,15 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../addressLatch.v"/>
           <Attr Name="ImportTime" Val="1447046177"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Lab2/FSM.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../FSM.v"/>
+          <Attr Name="ImportTime" Val="1447053409"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
