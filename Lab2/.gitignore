@@ -1,5 +1,0 @@
-#ignore work folder
-/work/*
-#igonre these files
-modelsim.ini*
-*.bak

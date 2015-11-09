@@ -1,11 +1,12 @@
 module FSM
-( input clk
- input RorW
- input CSReset
- input SCLK
- output reg addressLatch_WE
- output reg shiftReg_WE
- output reg MISO_enable
+( input clk,
+ input RorW,
+ input CSReset,
+ input SCLK,
+ input fault_pin,
+ output reg addressLatch_WE,
+ output reg shiftReg_WE,
+ output reg MISO_enable,
  output reg dataMem_WE
 );
     parameter counterwidth = 3; // Counter size, in bits, >= log2(waittime) used to count clock cycles of debounce period
@@ -30,8 +31,10 @@ module FSM
 //OPTION ONE INCLUDE CLK AND SCLK	
   always @(posedge clk) begin
 	if (CSReset == 1) begin
-		counter <= 0;
-		currentState <= state_GETTING_ADDRESS;
+		if (fault_pin == 0) begin
+			counter <= 0;
+			currentState <= state_GETTING_ADDRESS;
+		end
 	end
 	else begin
 		currentState <= nextState;
@@ -59,10 +62,10 @@ module FSM
 		    state_GOT_ADDRESS: begin
 			addressLatch_WE <= 0;
 			if (RorW == 1) begin
-				nextState <= state_READ1;
+				nextState <= state_READ_1;
 			end
 			else begin
-				nextState <= state_WRITE1;
+				nextState <= state_WRITE_1;
 			end
 		    end
 		    state_READ_1: begin
@@ -97,5 +100,5 @@ module FSM
 			nextState <= state_GETTING_ADDRESS;
 		    end		
 	endcase
-//	end
+end
 endmodule

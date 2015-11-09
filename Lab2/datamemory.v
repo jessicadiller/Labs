@@ -17,8 +17,7 @@ module datamemory
     input [addresswidth-1:0]    address,
     input                       writeEnable,
     input [width-1:0]           dataIn
-)
-
+);
 
     reg [width-1:0] memory [depth-1:0];
 
