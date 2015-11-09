@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# 
+# Start of session at: Mon Nov 09 02:11:31 2015
+# Process ID: 6780
+# Log file: C:/Users/jdiller/Documents/Labs/Lab2/mp2_fpga_wrapper/mp2_fpga_wrapper/spi_fpga/spi_fpga.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/jdiller/Documents/Labs/Lab2/mp2_fpga_wrapper/mp2_fpga_wrapper/spi_fpga/spi_fpga.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

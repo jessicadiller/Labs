@@ -1,0 +1,21 @@
+01:48:23 **** Auto Build of configuration Debug for project corespi ****
+make all 
+'Building file: ../src/spi_tester.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_tester.o" -I../../corespi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/spi_tester.d" -MT"src/spi_tester.d" -o "src/spi_tester.o" "../src/spi_tester.c"
+'Finished building: ../src/spi_tester.c'
+' '
+'Building target: corespi.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../corespi_bsp/ps7_cortexa9_0/lib -o "corespi.elf"  ./src/platform.o ./src/spi_tester.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: corespi.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size corespi.elf  |tee "corespi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32384	   1200	  22692	  56276	   dbd4	corespi.elf
+'Finished building: corespi.elf.size'
+' '
+
+01:48:24 Build Finished (took 858ms)
+

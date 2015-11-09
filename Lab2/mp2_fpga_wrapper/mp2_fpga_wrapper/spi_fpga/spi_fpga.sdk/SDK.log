@@ -1,0 +1,484 @@
+00:25:17 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+00:25:19 INFO  : Processing command line option -hwspec C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+00:25:21 INFO  : XSDB server has started successfully.
+00:28:24 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+00:28:25 INFO  : Processing command line option -hwspec C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+00:28:26 INFO  : XSDB server has started successfully.
+00:30:20 INFO  : Example project spi_soft_bsp_xspips_eeprom_polled_example_1 has been created successfully.
+00:41:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:41:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+00:41:16 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:42:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:42:11 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:837)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:718)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+00:42:32 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+00:42:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:42:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+00:42:45 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:42:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:43:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:44:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:45:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:47:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:50:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:50:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+00:50:05 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:50:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:50:24 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:837)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:718)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+00:50:33 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+00:50:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:50:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+00:50:49 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:50:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:51:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:51:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:04:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:04:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+01:04:18 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+01:04:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:04:28 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:837)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:718)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+01:04:43 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+01:04:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:12:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:13:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:15:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:22:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:28:45 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+01:28:45 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+01:28:50 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:58:27 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+15:58:28 INFO  : Processing command line option -hwspec C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+15:58:29 INFO  : XSDB server has started successfully.
+15:58:29 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+15:58:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1444593423627,  Project:1444537474556
+15:58:31 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+15:58:31 INFO  : Copied contents of C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+15:58:36 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:58:39 INFO  : 
+15:58:40 INFO  : Updating hardware inferred compiler options for spi_soft.
+15:58:41 INFO  : Updating hardware inferred compiler options for spi_soft_bsp_xspips_eeprom_polled_example_1.
+15:58:41 INFO  : Clearing existing target manager status.
+15:59:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:59:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+15:59:09 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:03:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:03:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+16:03:09 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:06:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:14:24 INFO  : Example project spi_soft_bsp_xgpiops_polled_example_1 has been created successfully.
+16:21:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:21:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:21:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:22:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:23:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+16:23:08 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:23:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:23:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:23:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:25:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:25:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+16:25:20 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:25:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:25:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:26:50 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:26:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:35:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:35:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+16:35:53 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:36:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:36:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:36:41 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:36:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+16:36:56 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:37:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:37:09 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:837)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:718)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:37:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:37:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+16:37:26 ERROR : Cannot find memory context of target ARM_DAP
+16:37:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:37:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+16:37:52 ERROR : 'fpga -file C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit' is cancelled.
+16:39:58 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+16:40:00 INFO  : Processing command line option -hwspec C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+16:40:01 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:40:01 INFO  : XSDB server has started successfully.
+16:40:47 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+16:40:49 INFO  : XSDB server has started successfully.
+16:40:50 INFO  : Processing command line option -hwspec C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+16:40:52 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:44:08 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+16:44:10 INFO  : XSDB server has started successfully.
+16:44:11 INFO  : Processing command line option -hwspec C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+16:44:12 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+17:16:06 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+17:16:11 INFO  : XSDB server has started successfully.
+17:16:12 INFO  : Processing command line option -hwspec C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+17:16:13 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+17:16:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:16:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+17:16:30 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:16:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:18:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+17:18:56 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:19:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:19:09 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:837)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:718)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:19:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:23:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:24:44 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:24:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:25:50 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+17:25:50 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+17:26:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:26:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+17:26:03 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:26:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:26:15 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:837)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:718)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:26:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:27:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:28:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:29:04 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:51:13 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+14:51:15 INFO  : Processing command line option -hwspec C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+14:51:16 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+14:51:16 INFO  : XSDB server has started successfully.
+15:24:34 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+15:24:35 INFO  : XSDB server has started successfully.
+15:24:38 INFO  : Processing command line option -hwspec C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+15:26:06 INFO  : Example project corespi_bsp_xspi_polled_example_1 has been created successfully.
+15:39:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:39:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+15:39:21 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:39:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:39:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+15:39:34 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:40:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:42:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:43:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:43:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:45:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:50:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:51:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:51:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+15:51:47 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:51:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:53:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:53:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+15:53:04 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:53:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:54:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:56:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:56:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:58:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:00:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:00:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:02:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:02:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:03:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:04:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:04:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+16:04:11 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:04:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:07:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:07:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:08:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:09:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:10:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:13:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:14:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:15:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:18:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:19:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:19:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:21:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:21:54 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:19:58 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+17:20:04 INFO  : XSDB server has started successfully.
+17:20:06 INFO  : Processing command line option -hwspec C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+17:25:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+17:25:49 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:26:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:27:52 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+17:27:52 WARN  : Terminating existing sessions on processor ps7_cortexa9_0
+17:28:00 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:30:21 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+17:30:23 INFO  : XSDB server has started successfully.
+17:30:24 INFO  : Processing command line option -hwspec C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+17:30:25 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+17:33:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+17:33:44 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:34:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:34:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+17:34:29 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:34:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:35:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:35:08 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:35:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:36:39 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:36:50 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+17:36:52 INFO  : XSDB server has started successfully.
+17:36:52 INFO  : Processing command line option -hwspec C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+17:37:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+17:37:16 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+17:38:39 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while sourcing C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_1/design_1_bd.tcl : invalid command name "version"
+	at com.xilinx.sdk.targetmanager.internal.TM.sourceTcl(TM.java:1005)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:413)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:40:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:40:40 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:40:57 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+17:40:58 INFO  : XSDB server has started successfully.
+17:41:01 INFO  : Processing command line option -hwspec C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+17:41:02 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+17:41:32 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+17:41:33 INFO  : Processing command line option -hwspec C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+17:41:34 INFO  : XSDB server has started successfully.
+17:43:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:43:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+17:43:30 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:43:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:44:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:15:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:15:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+22:15:12 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:15:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:16:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:16:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+22:16:37 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:16:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:17:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:18:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:18:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279651151A" && level==0} -index 1' command is executed.
+22:18:27 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:18:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:18:56 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+02:31:28 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+02:31:33 INFO  : XSDB server has started successfully.
+02:31:35 INFO  : Processing command line option -hwspec C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+02:31:37 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+02:36:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:36:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279652041A" && level==0} -index 1' command is executed.
+02:36:39 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+02:36:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:36:57 ERROR : No such port: COM6
+02:38:05 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+02:38:09 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+02:38:09 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:381)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:290)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+02:38:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:39:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:40:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:40:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279652041A" && level==0} -index 1' command is executed.
+02:40:23 INFO  : FPGA configured successfully with bitstream "C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+02:40:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:42:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+02:42:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:42:22 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+02:42:43 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+02:46:58 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+02:46:59 INFO  : Processing command line option -hwspec C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+02:47:00 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+02:47:01 INFO  : XSDB server has started successfully.
+02:47:03 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1445237165381,  Project:1444677838090
+02:47:03 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+02:47:03 INFO  : Copied contents of C:/Users/Kyle/Desktop/MP2_NOARDUINO/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+02:47:07 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:47:10 INFO  : 
+02:47:11 INFO  : Updating hardware inferred compiler options for corespi.
+02:47:11 INFO  : Clearing existing target manager status.
+02:48:10 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:41:49 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+01:41:50 INFO  : Processing command line option -hwspec C:/comparch/mp2_fpga_wrapper/mp2_fpga_wrapper/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.
+01:41:51 INFO  : XSDB server has started successfully.
+01:44:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:44:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279652041A" && level==0} -index 1' command is executed.
+01:44:48 INFO  : FPGA configured successfully with bitstream "C:/comparch/mp2_fpga_wrapper/mp2_fpga_wrapper/spi_fpga/spi_fpga.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+01:44:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:45:01 ERROR : No such port: COM8
+01:45:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:45:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:54:56 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:45:00 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+01:45:10 INFO  : XSDB server has started successfully.
+01:45:11 INFO  : Processing command line option -hwspec C:/Users/jdiller/Documents/Labs/Lab2/mp2_fpga_wrapper/mp2_fpga_wrapper/spi_fpga/spi_fpga.sdk/design_1_wrapper.hdf.

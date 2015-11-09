@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2.1 (64-bit)
+# SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
+# IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
+# Start of session at: Sun Oct 11 01:28:03 2015
+# Process ID: 1472
+# Log file: C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sim/sim_1/behav/xsim.dir/test_mp2_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.sim/sim_1/behav/xsim.dir/test_mp2_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Oct 11 01:28:21 2015. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 61.531 ; gain = 0.008
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 11 01:28:21 2015...

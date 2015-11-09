@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../spi_fpga.srcs/sources_1/imports/SPI/shiftregister.v"
+verilog xil_defaultlib  "../../../spi_fpga.srcs/sources_1/imports/SPI/StateMachine.v"
+verilog xil_defaultlib  "../../../spi_fpga.srcs/sources_1/imports/SPI/inputconditioner.v"
+verilog xil_defaultlib  "../../../spi_fpga.srcs/sources_1/imports/SPI/dff.v"
+verilog xil_defaultlib  "../../../spi_fpga.srcs/sources_1/imports/SPI/DataMemory.v"
+verilog xil_defaultlib  "../../../spi_fpga.srcs/sources_1/imports/SPI/buffer.v"
+verilog xil_defaultlib  "../../../spi_fpga.srcs/sources_1/imports/SPI/addresslatch.v"
+verilog xil_defaultlib  "../../../spi_fpga.srcs/sources_1/imports/SPI/spiMemory.v"
+verilog xil_defaultlib  "../../../spi_fpga.srcs/sources_1/imports/SPI/mp2.v"
+verilog xil_defaultlib  "../../../spi_fpga.srcs/sim_1/imports/SPI/mp2_tester.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2.1 (64-bit)
+# SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
+# IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
+# Start of session at: Mon Oct 12 15:22:35 2015
+# Process ID: 1184
+# Log file: C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Users/Kyle/Documents/Zynq/spi_fpga/spi_fpga.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
