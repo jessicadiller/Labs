@@ -1,0 +1,13 @@
+module addressLatch(
+input serialout,
+input negativeedge,
+input clock,
+output miso
+);
+always @(posedge clk) begin
+	if(negativeedge == 1) begin
+	miso = serialout
+	end
+end
+
+endmodule

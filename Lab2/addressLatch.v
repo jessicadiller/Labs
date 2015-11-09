@@ -5,6 +5,9 @@ input ce,
 output reg[7:0] q
 );
 always @(posedge clk) begin
-//just a big d flip flop 
+	if(ce == 1) begin
+	q = d; // I don't think this needs to be made into a bus but I may be wrong
+	end
+end
 
 endmodule
