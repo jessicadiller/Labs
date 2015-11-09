@@ -36,8 +36,7 @@ wire ADDR_WE;
 wire MISO_BUFF;
 wire DM_WE;
 //wire DFF inputs and outputs
-//wire address latch inputs and outputs
-//wire miso buffer inputs and outputs
+wire DFF_out;
 
 //instatiate
 inputconditioner conditioner1(clk, mosi_pin, c1conditioned, c1posedge c1negedge);
@@ -51,9 +50,11 @@ else begin
 	FSM fsm(clk, shiftRegOutP[0], c3conditioned, c2posedge, ADDR_WE, SR_WE, MISO_BUFF, DM_WE);
 end
 datamemory datamemory(clk, dataMemOut, address, DM_WE, shiftRegOutP);
-//instantiate DFF
 //insatiate address latch
-//instatiante miso buffer
+addressLatch addressLatch(clk, shiftRegOutP[7:0], ADDR_WE, address[6:0]);
+//instatiante DFF
+misodff DFF(shiftregOutS, c3negedge, clk, MISO_BUFF, DFF_out);
+
 
 endmodule
-   
+
